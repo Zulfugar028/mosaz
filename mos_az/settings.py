@@ -39,6 +39,12 @@ ALLOWED_HOSTS = [
     "localhost",
 ]
 
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+    }
+}
+
 
 # Application definition
 
