@@ -1,0 +1,31 @@
+:root {
+    --navy: #050d1a;
+    --deep: #0a1628;
+    --steel: #1a2d4a;
+    --ocean: #0f3460;
+    --cyan: #00d4ff;
+    --amber: #f5a623;
+    --white: #e8eef4;
+    --muted: #6a8099;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--navy);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    cursor: none;
+}
