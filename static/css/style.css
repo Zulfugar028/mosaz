@@ -144,7 +144,7 @@ nav ul a:hover {
    HERO
    ============================================================ */
 .hero {
-    min-height: 166vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
@@ -1780,7 +1780,7 @@ footer p {
     }
 
     .hero {
-        min-height: 145vh;
+        min-height: 166vh;
         grid-template-columns: 1fr;
     }
 
