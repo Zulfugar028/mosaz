@@ -18,7 +18,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.i18n import i18n_patterns
-from mos import views
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
@@ -26,8 +25,8 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
-    path('', views.members, name='home'),
-    path('mos/', views.members, name='mos'),
+    path('', include('mos.urls')),  # 👈 buraya views yox, app urls qoy
+    prefix_default_language=False,
 )
 
 # Development zamanı statik fayllar üçün
