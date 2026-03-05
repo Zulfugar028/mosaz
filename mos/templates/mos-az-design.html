@@ -5,7 +5,7 @@
 <html lang="{{ LANGUAGE_CODE }}">
 
 <head>
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOS — Marine & Oil Security</title>
@@ -44,7 +44,7 @@
         {% get_current_language as LANGUAGE_CODE %}
         {% get_available_languages as LANGUAGES %}
         {% for lang in LANGUAGES %}
-        <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+        <option value="{{ lang.0 }}" {% if lang.0==LANGUAGE_CODE %}selected{% endif %}>
           {{ lang.1 }}
         </option>
         {% endfor %}
@@ -139,6 +139,9 @@
     </div>
     <div class="services-grid">
       <div class="service-card" data-service="0">
+        <div class="card-bg">
+          <img src="şəkilin-adı.jpg" alt="">
+        </div>
         <p class="service-num">01</p>
         <svg class="service-icon" viewBox="0 0 48 48" fill="none">
           <circle cx="24" cy="24" r="10" stroke="#00d4ff" stroke-width="1.5" />
@@ -156,6 +159,9 @@
         <span class="service-arrow">→</span>
       </div>
       <div class="service-card" data-service="1">
+        <div class="card-bg">
+          <img src="şəkilin-adı.jpg" alt="">
+        </div>
         <p class="service-num">02</p>
         <svg class="service-icon" viewBox="0 0 48 48" fill="none">
           <rect x="8" y="8" width="32" height="24" rx="2" stroke="#00d4ff" stroke-width="1.5" />
@@ -168,6 +174,9 @@
         <span class="service-arrow">→</span>
       </div>
       <div class="service-card" data-service="2">
+        <div class="card-bg">
+          <img src="şəkilin-adı.jpg" alt="">
+        </div>
         <p class="service-num">03</p>
         <svg class="service-icon" viewBox="0 0 48 48" fill="none">
           <path d="M24 4L4 16v16l20 12 20-12V16L24 4z" stroke="#00d4ff" stroke-width="1.5" />
@@ -180,6 +189,9 @@
         <span class="service-arrow">→</span>
       </div>
       <div class="service-card" data-service="3">
+        <div class="card-bg">
+          <img src="şəkilin-adı.jpg" alt="">
+        </div>
         <p class="service-num">04</p>
         <svg class="service-icon" viewBox="0 0 48 48" fill="none">
           <path d="M8 36l8-16 8 8 8-20 8 12" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round" />
@@ -191,6 +203,9 @@
         <span class="service-arrow">→</span>
       </div>
       <div class="service-card" data-service="4">
+        <div class="card-bg">
+          <img src="şəkilin-adı.jpg" alt="">
+        </div>
         <p class="service-num">05</p>
         <svg class="service-icon" viewBox="0 0 48 48" fill="none">
           <path d="M24 8C15.2 8 8 15.2 8 24s7.2 16 16 16 16-7.2 16-16S32.8 8 24 8z" stroke="#00d4ff"
@@ -203,6 +218,9 @@
         <span class="service-arrow">→</span>
       </div>
       <div class="service-card" data-service="5">
+        <div class="card-bg">
+          <img src="şəkilin-adı.jpg" alt="">
+        </div>
         <p class="service-num">06</p>
         <svg class="service-icon" viewBox="0 0 48 48" fill="none">
           <rect x="6" y="20" width="36" height="24" rx="2" stroke="#00d4ff" stroke-width="1.5" />
