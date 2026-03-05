@@ -1,7 +1,8 @@
 {% load static %}
+{% load i18n %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ LANGUAGE_CODE }}">
 
 <head>
   <meta charset="UTF-8">
@@ -28,35 +29,44 @@
       <img src="{% static 'img/mos_logo_white.png' %}" alt="MOS Logo" loading="lazy">
     </a>
     <ul>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#analytics">Analytics</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#services">{% trans "Services" %}</a></li>
+      <li><a href="#analytics">{% trans "Analytics" %}</a></li>
+      <li><a href="#about">{% trans "About" %}</a></li>
+      <li><a href="#contact">{% trans "Contact" %}</a></li>
       <li><a href="#">EN</a></li>
     </ul>
     <!-- <a href="#contact" class="nav-cta">Get a Quote</a> -->
 
-    <div class="language">
-      <a href="#">EN</a>
-      <a href="#">AZ</a>
-      <a href="#">RU</a>
-    </div>
+    <form action="{% url 'set_language' %}" method="post" class="language-form">
+      {% csrf_token %}
+      <select name="language" onchange="this.form.submit()">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% for lang in LANGUAGES %}
+        <option value="{{ lang.0 }}" {% if lang.0==LANGUAGE_CODE %}selected{% endif %}>
+          {{ lang.1 }}
+        </option>
+        {% endfor %}
+      </select>
+    </form>
   </nav>
 
   <section class="hero">
     <div class="hero-content">
-      <p class="hero-tag fade-up">Azerbaijan's security partner since 2010</p>
+      <p class="hero-tag fade-up">{% trans "Azerbaijan's security partner since 2010" %}</p>
       <h1 class="fade-up">
         GUARD <span class="accent">THE</span>
         <span class="line2">DEEP</span>
       </h1>
       <p class="hero-desc fade-up">
+        {% blocktrans %}
         Marine & Oil security solutions engineered for Azerbaijan's most critical infrastructure — offshore, onshore,
         and everywhere between.
+        {% endblocktrans %}
       </p>
       <div class="hero-actions fade-up">
-        <a href="#services" class="btn-primary">Explore Services</a>
-        <a href="#contact" class="btn-secondary">Talk to an Expert ↗</a>
+        <a href="#services" class="btn-primary">{% trans "Explore Services" %}</a>
+        <a href="#contact" class="btn-secondary">{% trans "Talk to an Expert ↗" %}</a>
       </div>
     </div>
 
@@ -80,16 +90,16 @@
           <div class="sector-line sector-line-3"></div>
           <div class="sector-line sector-line-4"></div>
           <div class="sector-label" id="sector-1">
-            <span class="sector-name">Video Analitika</span>
+            <span class="sector-name">{% trans "Video Analytics" %}</span>
           </div>
           <div class="sector-label" id="sector-2">
-            <span class="sector-name">Kiber Təhlükəsizlik</span>
+            <span class="sector-name">{% trans "Cyber Security" %}</span>
           </div>
           <div class="sector-label" id="sector-3">
-            <span class="sector-name">Avtomatlaşdırma</span>
+            <span class="sector-name">{% trans "Automation" %}</span>
           </div>
           <div class="sector-label" id="sector-4">
-            <span class="sector-name">İnteqrasiya</span>
+            <span class="sector-name">{% trans "Integration" %}</span>
           </div>
         </div>
       </div>
@@ -119,11 +129,12 @@
   <section class="services" id="services">
     <div class="section-header">
       <div class="section-items">
-        <p class="section-tag">What We Do</p>
-        <h2>CORE SERVICES</h2>
+        <p class="section-tag">{% trans "What We Do" %}</p>
+        <h2>{% trans "CORE SERVICES" %}</h2>
       </div>
-      <p class="section-desc">Comprehensive security systems for marine and oil infrastructure across the Caspian
-        region.</p>
+      <p class="section-desc">{% blocktrans %}Comprehensive security systems for marine and oil infrastructure across
+        the Caspian
+        region.{% endblocktrans %}</p>
     </div>
     <div class="services-grid">
       <div class="service-card" data-service="0">
@@ -137,9 +148,10 @@
           <line x1="34" y1="24" x2="44" y2="24" stroke="#00d4ff" stroke-width="1.5" />
           <circle cx="24" cy="24" r="3" fill="#00d4ff" />
         </svg>
-        <h3>Perimeter Protection</h3>
-        <p>Advanced sensor networks and smart barriers secure your perimeter against unauthorized access, 24 hours a
-          day.</p>
+        <h3>{% trans "Perimeter Protection" %}</h3>
+        <p>{% blocktrans %}Advanced sensor networks and smart barriers secure your perimeter against unauthorized
+          access, 24 hours a
+          day.{% endblocktrans %}</p>
         <span class="service-arrow">→</span>
       </div>
       <div class="service-card" data-service="1">
@@ -149,8 +161,9 @@
           <path d="M16 38h16M24 32v6" stroke="#00d4ff" stroke-width="1.5" />
           <circle cx="24" cy="20" r="5" stroke="#00d4ff" stroke-width="1.5" />
         </svg>
-        <h3>Access Control</h3>
-        <p>Biometric and credential-based access management for restricted facilities, vessels, and critical zones.</p>
+        <h3>{% trans "Access Control" %}</h3>
+        <p>{% blocktrans %}Biometric and credential-based access management for restricted facilities, vessels, and
+          critical zones.{% endblocktrans %}</p>
         <span class="service-arrow">→</span>
       </div>
       <div class="service-card" data-service="2">
@@ -159,9 +172,10 @@
           <path d="M24 4L4 16v16l20 12 20-12V16L24 4z" stroke="#00d4ff" stroke-width="1.5" />
           <path d="M24 16v16M14 22l10 10 10-10" stroke="#00d4ff" stroke-width="1.5" />
         </svg>
-        <h3>Fire & Hazard Detection</h3>
-        <p>Multi-sensor early warning systems for fire, gas leaks, and environmental hazards on oil and marine
-          platforms.</p>
+        <h3>{% trans "Fire & Hazard Detection" %}</h3>
+        <p>{% blocktrans %}Multi-sensor early warning systems for fire, gas leaks, and environmental hazards on oil and
+          marine
+          platforms.{% endblocktrans %}</p>
         <span class="service-arrow">→</span>
       </div>
       <div class="service-card" data-service="3">
@@ -170,8 +184,9 @@
           <path d="M8 36l8-16 8 8 8-20 8 12" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round" />
           <rect x="4" y="4" width="40" height="40" rx="2" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="4 2" />
         </svg>
-        <h3>AI Video Analytics</h3>
-        <p>Machine learning-powered video analysis detects threats, tracks movement, and generates real-time alerts.</p>
+        <h3>{% trans "AI Video Analytics" %}</h3>
+        <p>{% blocktrans %}Machine learning-powered video analysis detects threats, tracks movement, and generates
+          real-time alerts.{% endblocktrans %}</p>
         <span class="service-arrow">→</span>
       </div>
       <div class="service-card" data-service="4">
@@ -181,8 +196,9 @@
             stroke-width="1.5" />
           <path d="M24 18v8l5 3" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round" />
         </svg>
-        <h3>24/7 Monitoring</h3>
-        <p>Round-the-clock remote surveillance and rapid response coordination from our Baku operations center.</p>
+        <h3>{% trans "24/7 Monitoring" %}</h3>
+        <p>{% blocktrans %}Round-the-clock remote surveillance and rapid response coordination from our Baku operations
+          center.{% endblocktrans %}</p>
         <span class="service-arrow">→</span>
       </div>
       <div class="service-card" data-service="5">
@@ -193,9 +209,10 @@
           <circle cx="24" cy="31" r="3" fill="#00d4ff" />
           <line x1="24" y1="34" x2="24" y2="38" stroke="#00d4ff" stroke-width="1.5" />
         </svg>
-        <h3>Warehouse Security</h3>
-        <p>Integrated physical and digital security solutions for oil storage, equipment depots, and marine logistics
-          hubs.</p>
+        <h3>{% trans "Warehouse Security" %}</h3>
+        <p>{% blocktrans %}Integrated physical and digital security solutions for oil storage, equipment depots, and
+          marine logistics
+          hubs.{% endblocktrans %}</p>
         <span class="service-arrow">→</span>
       </div>
     </div>
@@ -214,7 +231,7 @@
         <div class="modal-img-corner br"></div>
         <!-- Status label -->
         <div class="modal-image-status">
-          <span class="modal-status-dot"></span>ACTIVE DEPLOYMENT
+          <span class="modal-status-dot"></span>{% trans "ACTIVE DEPLOYMENT" %}
         </div>
       </div>
 
@@ -229,8 +246,8 @@
         <p class="modal-desc" id="modal-desc"></p>
         <div class="modal-features" id="modal-features"></div>
         <div class="modal-footer">
-          <span class="modal-tag" id="modal-tag">MARINE & OIL SECURITY</span>
-          <button class="modal-close" id="modal-close">[ CLOSE ]</button>
+          <span class="modal-tag" id="modal-tag">{% trans "MARINE & OIL SECURITY" %}</span>
+          <button class="modal-close" id="modal-close">[ {% trans "CLOSE" %} ]</button>
         </div>
       </div>
     </div>
@@ -246,10 +263,11 @@
         <div class="cam-corner tr"></div>
         <div class="cam-corner bl"></div>
         <div class="cam-corner br"></div>
-        <div class="detect-box"><span class="detect-label">PERSON — 98.2%</span></div>
-        <div class="detect-box"><span class="detect-label">PERSON — 95.7%</span></div>
-        <div class="detect-box"><span class="detect-label">OBJECT — 87.1%</span></div>
-        <div class="cam-info">ZONE: SECTOR-4<br>CAM: C-07<br>02:14:37 UTC<br>STATUS: ACTIVE</div>
+        <div class="detect-box"><span class="detect-label">{% trans "PERSON" %} — 98.2%</span></div>
+        <div class="detect-box"><span class="detect-label">{% trans "PERSON" %} — 95.7%</span></div>
+        <div class="detect-box"><span class="detect-label">{% trans "OBJECT" %} — 87.1%</span></div>
+        <div class="cam-info">{% trans "ZONE" %}: SECTOR-4<br>{% trans "CAM" %}: C-07<br>02:14:37 UTC<br>{% trans
+          "STATUS" %}: ACTIVE</div>
         <div class="cam-rec">
           <div class="cam-rec-dot"></div>REC
         </div>
@@ -257,19 +275,20 @@
       </div>
     </div>
     <div class="video-content">
-      <p class="section-tag">AI-Powered</p>
-      <h2>VIDEO<br>ANALYTICS</h2>
-      <p>Our computer vision platform processes live feeds in real-time, identifying human presence, vehicle movements,
-        and anomalous behavior before threats escalate.</p>
+      <p class="section-tag">{% trans "AI-Powered" %}</p>
+      <h2>{% trans "VIDEO" %}<br>{% trans "ANALYTICS" %}</h2>
+      <p>{% blocktrans %}Our computer vision platform processes live feeds in real-time, identifying human presence,
+        vehicle movements,
+        and anomalous behavior before threats escalate.{% endblocktrans %}</p>
       <ul class="feature-list">
-        <li>Real-time object & person detection</li>
-        <li>Unauthorized zone entry alerts</li>
-        <li>Behavioral anomaly recognition</li>
-        <li>License plate and vessel identification</li>
-        <li>Thermal imaging integration</li>
-        <li>Cloud & edge deployment options</li>
+        <li>{% trans "Real-time object & person detection" %}</li>
+        <li>{% trans "Unauthorized zone entry alerts" %}</li>
+        <li>{% trans "Behavioral anomaly recognition" %}</li>
+        <li>{% trans "License plate and vessel identification" %}</li>
+        <li>{% trans "Thermal imaging integration" %}</li>
+        <li>{% trans "Cloud & edge deployment options" %}</li>
       </ul>
-      <a href="#contact" class="btn-primary">Request a Demo</a>
+      <a href="#contact" class="btn-primary">{% trans "Request a Demo" %}</a>
     </div>
   </section>
 
@@ -279,15 +298,15 @@
     <div class="about-header">
       <div>
         <div class="tag-row">
-          <span class="section-tag">Who We Are</span>
+          <span class="section-tag">{% trans "Who We Are" %}</span>
           <span class="tag-line"></span>
         </div>
-        <h1 class="about-title">ABOUT<br><em>US</em></h1>
+        <h1 class="about-title">{% trans "ABOUT" %}<br><em>{% trans "US" %}</em></h1>
       </div>
       <p class="about-lead">
-        We are a pioneering force in <strong>maritime security</strong>, delivering cutting-edge solutions that protect
+        {% blocktrans %}We are a pioneering force in maritime security, delivering cutting-edge solutions that protect
         vessels, offshore facilities, and marine environments across the Caspian region and beyond. Our integrated
-        approach combines advanced technology with deep industry expertise.
+        approach combines advanced technology with deep industry expertise.{% endblocktrans %}
       </p>
     </div>
 
@@ -295,31 +314,31 @@
     <div class="stats-bar">
       <div class="stat">
         <div class="stat-num">24/7</div>
-        <div class="stat-label">Operational Monitoring</div>
+        <div class="stat-label">{% trans "Operational Monitoring" %}</div>
       </div>
       <div class="stat">
         <div class="stat-num">15+</div>
-        <div class="stat-label">Years of Expertise</div>
+        <div class="stat-label">{% trans "Years of Expertise" %}</div>
       </div>
       <div class="stat">
         <div class="stat-num">40+</div>
-        <div class="stat-label">Global Partners</div>
+        <div class="stat-label">{% trans "Global Partners" %}</div>
       </div>
       <div class="stat">
         <div class="stat-num">99.8%</div>
-        <div class="stat-label">System Uptime</div>
+        <div class="stat-label">{% trans "System Uptime" %}</div>
       </div>
     </div>
 
     <!-- ── PILLARS LABEL ── -->
-    <div class="pillars-label">Our Core Pillars</div>
+    <div class="pillars-label">{% trans "Our Core Pillars" %}</div>
 
     <!-- ── PILLAR GRID ROW 1 ── -->
     <div class="pillars-grid">
 
       <!-- Mission -->
       <div class="pillar">
-        <span class="pillar-index">01 / MISSION</span>
+        <span class="pillar-index">01 / {% trans "Mission" %}</span>
         <svg class="pillar-icon" viewBox="0 0 40 40" fill="none">
           <circle cx="20" cy="20" r="8" stroke="#00d4ff" stroke-width="1.4" />
           <circle cx="20" cy="20" r="16" stroke="#00d4ff" stroke-width="0.8" stroke-dasharray="3 2.5" />
@@ -329,92 +348,92 @@
           <line x1="28" y1="20" x2="36" y2="20" stroke="#00d4ff" stroke-width="1.4" />
           <circle cx="20" cy="20" r="2.5" fill="#00d4ff" />
         </svg>
-        <h3>Our Mission</h3>
+        <h3>{% trans "Mission" %}</h3>
         <ul>
-          <li>Providing cutting-edge security solutions for maritime safety.</li>
-          <li>Protecting lives, assets, and marine environments with advanced technologies.</li>
-          <li>Developing robust emergency response and prevention mechanisms.</li>
+          <li>{% trans "Providing cutting-edge security solutions for maritime safety." %}</li>
+          <li>{% trans "Protecting lives, assets, and marine environments with advanced technologies." %}</li>
+          <li>{% trans "Developing robust emergency response and prevention mechanisms." %}</li>
         </ul>
       </div>
 
       <!-- Vision -->
       <div class="pillar">
-        <span class="pillar-index">02 / VISION</span>
+        <span class="pillar-index">02 / {% trans "Vision" %}</span>
         <svg class="pillar-icon" viewBox="0 0 40 40" fill="none">
           <path d="M4 20 C10 10 16 6 20 6 C24 6 30 10 36 20 C30 30 24 34 20 34 C16 34 10 30 4 20Z" stroke="#00d4ff"
             stroke-width="1.4" />
           <circle cx="20" cy="20" r="5" stroke="#00d4ff" stroke-width="1.4" />
           <circle cx="20" cy="20" r="1.8" fill="#00d4ff" />
         </svg>
-        <h3>Our Vision</h3>
+        <h3>{% trans "Vision" %}</h3>
         <ul>
-          <li>Becoming a global leader in maritime security innovations.</li>
-          <li>Fostering a safe and sustainable marine ecosystem.</li>
-          <li>Setting international standards in maritime safety and protection.</li>
+          <li>{% trans "Becoming a global leader in maritime security innovations." %}</li>
+          <li>{% trans "Fostering a safe and sustainable marine ecosystem." %}</li>
+          <li>{% trans "Setting international standards in maritime safety and protection." %}</li>
         </ul>
       </div>
 
       <!-- Comprehensive Security -->
       <div class="pillar">
-        <span class="pillar-index">03 / SOLUTIONS</span>
+        <span class="pillar-index">03 / {% trans "Solutions" %}</span>
         <svg class="pillar-icon" viewBox="0 0 40 40" fill="none">
           <path d="M20 4L4 13v14l16 9 16-9V13L20 4z" stroke="#00d4ff" stroke-width="1.4" />
           <path d="M20 14v12M12 18l8 8 8-8" stroke="#00d4ff" stroke-width="1.4" />
         </svg>
-        <h3>Comprehensive Security Solutions</h3>
+        <h3>{% trans "Solutions" %}</h3>
         <ul>
-          <li>Advanced fire detection and suppression systems.</li>
-          <li>Flood prevention technologies and real-time water level monitoring.</li>
-          <li>Rescue and evacuation systems, including lifeboats and emergency communication.</li>
+          <li>{% trans "Advanced fire detection and suppression systems." %}</li>
+          <li>{% trans "Flood prevention technologies and real-time water level monitoring." %}</li>
+          <li>{% trans "Rescue and evacuation systems, including lifeboats and emergency communication." %}</li>
         </ul>
       </div>
 
       <!-- Commitment -->
       <div class="pillar">
-        <span class="pillar-index">04 / COMMITMENT</span>
+        <span class="pillar-index">04 / {% trans "Commitment" %}</span>
         <svg class="pillar-icon" viewBox="0 0 40 40" fill="none">
           <rect x="6" y="16" width="28" height="20" rx="2" stroke="#00d4ff" stroke-width="1.4" />
           <path d="M13 16v-5a7 7 0 0114 0v5" stroke="#00d4ff" stroke-width="1.4" />
           <circle cx="20" cy="25" r="2.5" fill="#00d4ff" />
           <line x1="20" y1="27.5" x2="20" y2="31" stroke="#00d4ff" stroke-width="1.4" />
         </svg>
-        <h3>Our Commitment to Safety</h3>
+        <h3>{% trans "Commitment to Safety" %}</h3>
         <ul>
-          <li>Ensuring top-tier safety for vessels and marine facilities.</li>
-          <li>Partnering with global experts to deliver innovative solutions.</li>
-          <li>Offering continuous support and maintenance for all security systems.</li>
+          <li>{% trans "Ensuring top-tier safety for vessels and marine facilities." %}</li>
+          <li>{% trans "Partnering with global experts to deliver innovative solutions." %}</li>
+          <li>{% trans "Offering continuous support and maintenance for all security systems." %}</li>
         </ul>
       </div>
 
       <!-- Why Choose Us -->
       <div class="pillar">
-        <span class="pillar-index">05 / ADVANTAGE</span>
+        <span class="pillar-index">05 / {% trans "Advantage" %}</span>
         <svg class="pillar-icon" viewBox="0 0 40 40" fill="none">
           <polygon points="20,4 24.5,14.5 36,15.3 27.5,23.3 30.1,34.6 20,28.8 9.9,34.6 12.5,23.3 4,15.3 15.5,14.5"
             stroke="#00d4ff" stroke-width="1.4" fill="none" />
           <circle cx="20" cy="20" r="3" fill="#00d4ff" opacity="0.6" />
         </svg>
-        <h3>Why Choose Us?</h3>
+        <h3>{% trans "Advantage" %}</h3>
         <ul>
-          <li>Highly experienced team with deep maritime expertise.</li>
-          <li>A diverse range of reliable and certified security systems.</li>
-          <li>Unwavering dedication to customer satisfaction and innovation.</li>
+          <li>{% trans "Highly experienced team with deep maritime expertise." %}</li>
+          <li>{% trans "A diverse range of reliable and certified security systems." %}</li>
+          <li>{% trans "Unwavering dedication to customer satisfaction and innovation." %}</li>
         </ul>
       </div>
 
       <!-- Advanced Technologies -->
       <div class="pillar">
-        <span class="pillar-index">06 / TECHNOLOGY</span>
+        <span class="pillar-index">06 / {% trans "Technology" %}</span>
         <svg class="pillar-icon" viewBox="0 0 40 40" fill="none">
           <path d="M6 28l7-13 6 6 7-16 6 10" stroke="#00d4ff" stroke-width="1.4" stroke-linecap="round" />
           <rect x="2" y="2" width="36" height="36" rx="2" stroke="#00d4ff" stroke-width="1" stroke-dasharray="3 2" />
           <circle cx="20" cy="20" r="2" fill="#00d4ff" />
         </svg>
-        <h3>Advanced Technologies</h3>
+        <h3>{% trans "Technology" %}</h3>
         <ul>
-          <li>AI-driven threat detection systems to safeguard against piracy.</li>
-          <li>Integration of IoT devices for real-time monitoring.</li>
-          <li>Customizable solutions tailored to specific maritime needs.</li>
+          <li>{% trans "AI-driven threat detection systems to safeguard against piracy." %}</li>
+          <li>{% trans "Integration of IoT devices for real-time monitoring." %}</li>
+          <li>{% trans "Customizable solutions tailored to specific maritime needs." %}</li>
         </ul>
       </div>
 
@@ -425,24 +444,24 @@
 
       <!-- Global Partnerships -->
       <div class="pillar">
-        <span class="pillar-index">07 / PARTNERSHIPS</span>
+        <span class="pillar-index">07 / {% trans "Partnerships" %}</span>
         <svg class="pillar-icon" viewBox="0 0 40 40" fill="none">
           <circle cx="20" cy="20" r="15" stroke="#00d4ff" stroke-width="1.4" />
           <ellipse cx="20" cy="20" rx="6" ry="15" stroke="#00d4ff" stroke-width="0.9" />
           <line x1="5" y1="20" x2="35" y2="20" stroke="#00d4ff" stroke-width="0.9" />
           <line x1="20" y1="5" x2="20" y2="35" stroke="#00d4ff" stroke-width="0.9" />
         </svg>
-        <h3>Global Partnerships</h3>
+        <h3>{% trans "Partnerships" %}</h3>
         <ul>
-          <li>Collaborating with top-tier security firms worldwide.</li>
-          <li>Participating in international maritime safety conferences.</li>
-          <li>Building a network of trusted partners for enhanced solutions.</li>
+          <li>{% trans "Collaborating with top-tier security firms worldwide." %}</li>
+          <li>{% trans "Participating in international maritime safety conferences." %}</li>
+          <li>{% trans "Building a network of trusted partners for enhanced solutions." %}</li>
         </ul>
       </div>
 
       <!-- Sustainability -->
       <div class="pillar">
-        <span class="pillar-index">08 / SUSTAINABILITY</span>
+        <span class="pillar-index">08 / {% trans "Sustainability" %}</span>
         <svg class="pillar-icon" viewBox="0 0 40 40" fill="none">
           <path d="M20 6 C10 6 6 16 10 22 C14 28 10 34 20 34 C30 34 34 26 28 20 C24 14 26 6 20 6Z" stroke="#00d4ff"
             stroke-width="1.4" />
@@ -450,11 +469,11 @@
           <path d="M20 24 L14 18" stroke="#00d4ff" stroke-width="1.4" />
           <path d="M20 20 L26 14" stroke="#00d4ff" stroke-width="1.4" />
         </svg>
-        <h3>Sustainability Initiatives</h3>
+        <h3>{% trans "Sustainability Initiatives" %}</h3>
         <ul>
-          <li>Implementing eco-friendly security technologies.</li>
-          <li>Promoting energy-efficient maritime operations.</li>
-          <li>Developing strategies to minimize environmental impact.</li>
+          <li>{% trans "Implementing eco-friendly security technologies." %}</li>
+          <li>{% trans "Promoting energy-efficient maritime operations." %}</li>
+          <li>{% trans "Developing strategies to minimize environmental impact." %}</li>
         </ul>
       </div>
 
@@ -467,20 +486,20 @@
       </div>
       <div class="manifesto-body">
         <div class="manifesto-item">
-          <span class="manifesto-item-label">Always Available</span>
-          <p>24/7 dedicated customer service for immediate assistance, any time, any zone.</p>
+          <span class="manifesto-item-label">{% trans "Always Available" %}</span>
+          <p>{% trans "24/7 dedicated customer service for immediate assistance, any time, any zone." %}</p>
         </div>
         <div class="manifesto-item">
-          <span class="manifesto-item-label">Training Programs</span>
-          <p>Comprehensive training programs designed to empower your client teams with confidence.</p>
+          <span class="manifesto-item-label">{% trans "Training Programs" %}</span>
+          <p>{% trans "Comprehensive training programs designed to empower your client teams with confidence." %}</p>
         </div>
         <div class="manifesto-item">
-          <span class="manifesto-item-label">System Updates</span>
-          <p>Regular updates and upgrades to maintain peak system efficiency and security standards.</p>
+          <span class="manifesto-item-label">{% trans "System Updates" %}</span>
+          <p>{% trans "Regular updates and upgrades to maintain peak system efficiency and security standards." %}</p>
         </div>
         <div class="manifesto-item">
-          <span class="manifesto-item-label">Long-Term Partnership</span>
-          <p>We stay committed beyond deployment — your success is our ongoing mission.</p>
+          <span class="manifesto-item-label">{% trans "Long-Term Partnership" %}</span>
+          <p>{% trans "We stay committed beyond deployment — your success is our ongoing mission." %}</p>
         </div>
       </div>
     </div>
@@ -489,22 +508,22 @@
 
   <section class="contact-section" id="contact">
     <div class="contact-info">
-      <p class="section-tag">Get In Touch</p>
-      <h2>START A<br>PROJECT</h2>
-      <p>Ready to secure your operations? Our engineers are available to assess your facility and recommend the right
-        solution.</p>
+      <p class="section-tag">{% trans "Get In Touch" %}</p>
+      <h2>{% trans "START A<br>PROJECT" %}</h2>
+      <p>{% trans "Ready to secure your operations? Our engineers are available to assess your facility and recommend
+        the right solution." %}</p>
       <div class="contact-details">
         <div class="contact-item">
-          <span class="contact-item-label">Phone</span>
+          <span class="contact-item-label">{% trans "Phone" %}</span>
           <span class="contact-item-value"><a href="tel:+994506872425">+994 50 687 24 25</a></span>
         </div>
         <div class="contact-item">
-          <span class="contact-item-label">Email</span>
+          <span class="contact-item-label">{% trans "Email" %}</span>
           <span class="contact-item-value"><a href="mailto:office@mos.az">office@mos.az</a></span>
         </div>
         <div class="contact-item">
-          <span class="contact-item-label">Hours</span>
-          <span class="contact-item-value">Mon – Fri, 09:00 – 18:00 (Baku time)</span>
+          <span class="contact-item-label">{% trans "Hours" %}</span>
+          <span class="contact-item-value">{% trans "Mon – Fri, 09:00 – 18:00 (Baku time)" %}</span>
         </div>
       </div>
     </div>
@@ -514,30 +533,30 @@
       {% csrf_token %}
       <div class="form-row">
         <div class="form-group">
-          <label for="{{ form.full_name.id_for_label }}">Full Name</label>
+          <label for="{{ form.full_name.id_for_label }}">{% trans "Full Name" %}</label>
           {{ form.full_name }}
         </div>
         <div class="form-group">
-          <label for="{{ form.company.id_for_label }}">Company</label>
+          <label for="{{ form.company.id_for_label }}">{% trans "Company" %}</label>
           {{ form.company }}
         </div>
       </div>
       <div class="form-group">
-        <label for="{{ form.email.id_for_label }}">Email Address</label>
+        <label for="{{ form.email.id_for_label }}">{% trans "Email Address" %}</label>
         {{ form.email }}
       </div>
       <div class="form-group">
-        <label for="{{ form.service.id_for_label }}">Service Interest</label>
+        <label for="{{ form.service.id_for_label }}">{% trans "Service Interest" %}</label>
         {{ form.service }}
       </div>
       <div class="form-group">
-        <label for="{{ form.message.id_for_label }}">Message</label>
+        <label for="{{ form.message.id_for_label }}">{% trans "Message" %}</label>
         {{ form.message }}
       </div>
-      <button class="submit-btn" type="submit">Send Message →</button>
+      <button class="submit-btn" type="submit">{% trans "Send Message →" %}</button>
     </form>
     {% if success %}
-    <p class="success-msg">Thanks! Your message has been sent.</p>
+    <p class="success-msg">{% trans "Thanks! Your message has been sent." %}</p>
     {% endif %}
   </section>
 
@@ -545,8 +564,8 @@
     <a href="#" class="footer-logo">
       <img src="/static/img/mos_logo_white.png" alt="MOS.AZ" loading="lazy">
     </a>
-    <p>© 2025 Marine & Oil Security — All rights reserved</p>
-    <p>Baku, Azerbaijan</p>
+    <p>{% trans "© 2025 Marine & Oil Security — All rights reserved" %}</p>
+    <p>{% trans "Baku, Azerbaijan" %}</p>
   </footer>
 
   <script src="/static/js/app.js"></script>

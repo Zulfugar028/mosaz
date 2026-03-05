@@ -16,14 +16,19 @@ Including another URLconf
 """
 # mos_az/urls.py
 from django.contrib import admin
-from django.urls import path
-from mos import views   # app-dən import
+from django.urls import path, include
+from django.conf.urls.i18n import i18n_patterns
+from mos import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.members, name='home'),   # <- baş səhifə üçün
-    path('mos/', views.members, name='mos'),
+    path('i18n/', include('django.conf.urls.i18n')),
 ]
+
+urlpatterns += i18n_patterns(
+    path('admin/', admin.site.urls),
+    path('', views.members, name='home'),
+    path('mos/', views.members, name='mos'),
+)
 
 # Development zamanı statik fayllar üçün
 from django.conf import settings
