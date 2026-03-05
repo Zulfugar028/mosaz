@@ -234,20 +234,9 @@ nav ul a:hover {
     width: 1px;
     height: 300px;
     transform-origin: 0% 0%;
-    animation: sweep 4s linear infinite;
     background: linear-gradient(to bottom, var(--cyan), transparent);
     box-shadow: 0 0 20px var(--cyan);
     will-change: transform;
-}
-
-@keyframes sweep {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 .blip {
