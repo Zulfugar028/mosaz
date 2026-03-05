@@ -1,18 +1,15 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Azerbaijani translations for MOS.AZ
+# Marine & Oil Security
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: MOS.AZ 1.0\n"
 "Language: az\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates
 msgid "Services"
 msgstr "Xidmətlər"
 
@@ -26,7 +23,7 @@ msgid "Contact"
 msgstr "Əlaqə"
 
 msgid "Azerbaijan's security partner since 2010"
-msgstr "2010-cu ildən Azərbaycanın təhlükəsizlik partnyoru"
+msgstr "2010-cu ildən Azərbaycanın təhlükəsizlik tərəfdaşı"
 
 msgid "Explore Services"
 msgstr "Xidmətləri Kəşf Et"
@@ -52,23 +49,76 @@ msgstr "Nə Edirik"
 msgid "CORE SERVICES"
 msgstr "ƏSAS XİDMƏTLƏR"
 
+msgid ""
+"Comprehensive security systems for marine and oil infrastructure across\n"
+"        the Caspian\n"
+"        region."
+msgstr ""
+"Xəzər regionu üzrə dəniz və neft infrastrukturu üçün\n"
+"        hərtərəfli təhlükəsizlik sistemləri."
+
 msgid "Perimeter Protection"
 msgstr "Perimetr Mühafizəsi"
+
+msgid ""
+"Advanced sensor networks and smart barriers secure your perimeter against unauthorized\n"
+"          access, 24 hours a\n"
+"          day."
+msgstr ""
+"Qabaqcıl sensor şəbəkələri və ağıllı maneələr perimetrinizi\n"
+"          gün ərzində icazəsiz girişdən qoruyur."
 
 msgid "Access Control"
 msgstr "Girişə Nəzarət"
 
+msgid ""
+"Biometric and credential-based access management for restricted facilities, vessels, and\n"
+"          critical zones."
+msgstr ""
+"Məhdud müəssisələr, gəmilər və kritik zonalar üçün\n"
+"          biometrik və etimadnaməyə əsaslanan giriş idarəetməsi."
+
 msgid "Fire & Hazard Detection"
 msgstr "Yanğın və Təhlükə Aşkarlanması"
+
+msgid ""
+"Multi-sensor early warning systems for fire, gas leaks, and environmental hazards on oil and\n"
+"          marine\n"
+"          platforms."
+msgstr ""
+"Neft və dəniz platformalarında yanğın, qaz sızması və ətraf mühit\n"
+"          təhlükələri üçün çox sensorlu erkən xəbərdarlıq sistemləri."
 
 msgid "AI Video Analytics"
 msgstr "AI Video Analitika"
 
+msgid ""
+"Machine learning-powered video analysis detects threats, tracks movement, and generates\n"
+"          real-time alerts."
+msgstr ""
+"Maşın öyrənməsi ilə gücləndirilmiş video analizi təhlükələri aşkarlayır,\n"
+"          hərəkəti izləyir və real vaxt xəbərdarlıqları yaradır."
+
 msgid "24/7 Monitoring"
 msgstr "24/7 Monitorinq"
 
+msgid ""
+"Round-the-clock remote surveillance and rapid response coordination from our Baku operations\n"
+"          center."
+msgstr ""
+"Bakı əməliyyat mərkəzimizdən gecə-gündüz uzaqdan müşahidə\n"
+"          və sürətli reaksiya koordinasiyası."
+
 msgid "Warehouse Security"
 msgstr "Anbar Təhlükəsizliyi"
+
+msgid ""
+"Integrated physical and digital security solutions for oil storage, equipment depots, and\n"
+"          marine logistics\n"
+"          hubs."
+msgstr ""
+"Neft anbarları, avadanlıq depoları və dəniz logistika\n"
+"          mərkəzləri üçün inteqrasiya edilmiş fiziki və rəqəmsal təhlükəsizlik həlləri."
 
 msgid "ACTIVE DEPLOYMENT"
 msgstr "AKTİV TƏTBİQ"
@@ -91,14 +141,44 @@ msgstr "ZONA"
 msgid "CAM"
 msgstr "KAMERA"
 
+msgid "STATUS"
+msgstr "VƏZIYYƏT"
+
 msgid "AI-Powered"
-msgstr "Süni İntellekt"
+msgstr "Süni İntellektlə İdarə Olunan"
 
 msgid "VIDEO"
 msgstr "VİDEO"
 
 msgid "ANALYTICS"
 msgstr "ANALİTİKA"
+
+msgid ""
+"Our computer vision platform processes live feeds in real-time, identifying human presence,\n"
+"        vehicle movements,\n"
+"        and anomalous behavior before threats escalate."
+msgstr ""
+"Kompüter görmə platformamız canlı yayımları real vaxtda emal edərək\n"
+"        insan varlığını, nəqliyyat hərəkətlərini və anormal davranışı\n"
+"        təhlükələr böyümədən əvvəl müəyyənləşdirir."
+
+msgid "Real-time object & person detection"
+msgstr "Real vaxtda obyekt və şəxs aşkarlanması"
+
+msgid "Unauthorized zone entry alerts"
+msgstr "İcazəsiz zonaya giriş xəbərdarlıqları"
+
+msgid "Behavioral anomaly recognition"
+msgstr "Davranış anomaliyasının tanınması"
+
+msgid "License plate and vessel identification"
+msgstr "Nömrə nişanı və gəmi identifikasiyası"
+
+msgid "Thermal imaging integration"
+msgstr "Termal görüntüləmə inteqrasiyası"
+
+msgid "Cloud & edge deployment options"
+msgstr "Bulud və kənar yerləşdirmə seçimləri"
 
 msgid "Request a Demo"
 msgstr "Demo Tələb Et"
@@ -112,6 +192,16 @@ msgstr "HAQQINDA"
 msgid "US"
 msgstr "BİZ"
 
+msgid ""
+"We are a pioneering force in maritime security, delivering cutting-edge solutions that protect\n"
+"        vessels, offshore facilities, and marine environments across the Caspian region and beyond. Our integrated\n"
+"        approach combines advanced technology with deep industry expertise."
+msgstr ""
+"Biz dənizçilik təhlükəsizliyində öncül bir qüvvəyik — Xəzər regionu və onun\n"
+"        hüdudlarından kənarda gəmiləri, dəniz kənarı obyektləri və dəniz mühitini qoruyan\n"
+"        ən müasir həllər təqdim edirik. İnteqrasiya edilmiş yanaşmamız qabaqcıl\n"
+"        texnologiyanı dərin sənaye təcrübəsi ilə birləşdirir."
+
 msgid "Operational Monitoring"
 msgstr "Operativ Monitorinq"
 
@@ -119,10 +209,10 @@ msgid "Years of Expertise"
 msgstr "İllik Təcrübə"
 
 msgid "Global Partners"
-msgstr "Qlobal Partnyorlar"
+msgstr "Qlobal Tərəfdaşlar"
 
 msgid "System Uptime"
-msgstr "Sistemin Stabil İşləməsi"
+msgstr "Sistemin Fasiləsiz İşləməsi"
 
 msgid "Our Core Pillars"
 msgstr "Əsas Prinsiplərimiz"
@@ -130,47 +220,141 @@ msgstr "Əsas Prinsiplərimiz"
 msgid "Mission"
 msgstr "Missiya"
 
+msgid "Providing cutting-edge security solutions for maritime safety."
+msgstr "Dənizçilik təhlükəsizliyi üçün ən müasir təhlükəsizlik həlləri təqdim etmək."
+
+msgid "Protecting lives, assets, and marine environments with advanced technologies."
+msgstr "Qabaqcıl texnologiyalarla həyatı, aktivləri və dəniz mühitini qorumaq."
+
+msgid "Developing robust emergency response and prevention mechanisms."
+msgstr "Güclü fövqəladə vəziyyət reaksiyası və profilaktika mexanizmləri inkişaf etdirmək."
+
 msgid "Vision"
 msgstr "Vizyon"
 
+msgid "Becoming a global leader in maritime security innovations."
+msgstr "Dənizçilik təhlükəsizliyi innovasiyalarında qlobal liderə çevrilmək."
+
+msgid "Fostering a safe and sustainable marine ecosystem."
+msgstr "Təhlükəsiz və dayanıqlı dəniz ekosistemi formalaşdırmaq."
+
+msgid "Setting international standards in maritime safety and protection."
+msgstr "Dənizçilik təhlükəsizliyi və mühafizəsində beynəlxalq standartlar müəyyənləşdirmək."
+
 msgid "Solutions"
 msgstr "Həllər"
+
+msgid "Advanced fire detection and suppression systems."
+msgstr "Qabaqcıl yanğın aşkarlama və söndürmə sistemləri."
+
+msgid "Flood prevention technologies and real-time water level monitoring."
+msgstr "Daşqın qarşısının alınması texnologiyaları və real vaxtda su səviyyəsi monitorinqi."
+
+msgid "Rescue and evacuation systems, including lifeboats and emergency communication."
+msgstr "Xilasetmə qayıqları və fövqəladə rabitə daxil olmaqla xilasetmə və təxliyyə sistemləri."
 
 msgid "Commitment"
 msgstr "Öhdəlik"
 
 msgid "Commitment to Safety"
-msgstr "Təhlükəsizliyə Öhdəlik"
+msgstr "Təhlükəsizliyə Sadiqlik"
+
+msgid "Ensuring top-tier safety for vessels and marine facilities."
+msgstr "Gəmilər və dəniz obyektləri üçün ən yüksək səviyyəli təhlükəsizliyin təmin edilməsi."
+
+msgid "Partnering with global experts to deliver innovative solutions."
+msgstr "İnnovativ həllər təqdim etmək üçün qlobal mütəxəssislərlə əməkdaşlıq."
+
+msgid "Offering continuous support and maintenance for all security systems."
+msgstr "Bütün təhlükəsizlik sistemləri üçün davamlı dəstək və texniki xidmət göstərilməsi."
 
 msgid "Advantage"
 msgstr "Üstünlük"
 
+msgid "Highly experienced team with deep maritime expertise."
+msgstr "Dərin dənizçilik təcrübəsinə malik yüksək ixtisaslı komanda."
+
+msgid "A diverse range of reliable and certified security systems."
+msgstr "Etibarlı və sertifikatlaşdırılmış təhlükəsizlik sistemlərinin geniş çeşidi."
+
+msgid "Unwavering dedication to customer satisfaction and innovation."
+msgstr "Müştəri məmnuniyyəti və innovasiyaya sarsılmaz bağlılıq."
+
 msgid "Technology"
 msgstr "Texnologiya"
 
+msgid "AI-driven threat detection systems to safeguard against piracy."
+msgstr "Piratçılığa qarşı mühafizə üçün süni intellektlə idarə olunan təhlükə aşkarlama sistemləri."
+
+msgid "Integration of IoT devices for real-time monitoring."
+msgstr "Real vaxtda monitorinq üçün IoT cihazlarının inteqrasiyası."
+
+msgid "Customizable solutions tailored to specific maritime needs."
+msgstr "Xüsusi dənizçilik tələblərinə uyğunlaşdırılmış fərdiləşdirilə bilən həllər."
+
 msgid "Partnerships"
-msgstr "Partnyorluq"
+msgstr "Tərəfdaşlıq"
+
+msgid "Collaborating with top-tier security firms worldwide."
+msgstr "Dünya üzrə aparıcı təhlükəsizlik şirkətləri ilə əməkdaşlıq."
+
+msgid "Participating in international maritime safety conferences."
+msgstr "Beynəlxalq dənizçilik təhlükəsizliyi konfranslarında iştirak."
+
+msgid "Building a network of trusted partners for enhanced solutions."
+msgstr "Təkmilləşdirilmiş həllər üçün etibarlı tərəfdaşlar şəbəkəsinin qurulması."
 
 msgid "Sustainability"
 msgstr "Dayanıqlılıq"
 
+msgid "Sustainability Initiatives"
+msgstr "Dayanıqlılıq Təşəbbüsləri"
+
+msgid "Implementing eco-friendly security technologies."
+msgstr "Ekoloji cəhətdən təmiz təhlükəsizlik texnologiyalarının tətbiqi."
+
+msgid "Promoting energy-efficient maritime operations."
+msgstr "Enerjiyə qənaətli dəniz əməliyyatlarının təşviqi."
+
+msgid "Developing strategies to minimize environmental impact."
+msgstr "Ətraf mühitə təsiri minimuma endirmək üçün strategiyaların işlənib hazırlanması."
+
 msgid "Always Available"
 msgstr "Hər Zaman Aktiv"
+
+msgid "24/7 dedicated customer service for immediate assistance, any time, any zone."
+msgstr "İstənilən vaxt, istənilən zonada dərhal yardım üçün 24/7 xüsusi müştəri xidməti."
 
 msgid "Training Programs"
 msgstr "Təlim Proqramları"
 
+msgid "Comprehensive training programs designed to empower your client teams with confidence."
+msgstr "Müştəri komandalarınızı inamla gücləndirmək üçün hazırlanmış hərtərəfli təlim proqramları."
+
 msgid "System Updates"
 msgstr "Sistem Yeniləmələri"
+
+msgid "Regular updates and upgrades to maintain peak system efficiency and security standards."
+msgstr "Sistemin maksimal səmərəliliyini və təhlükəsizlik standartlarını qorumaq üçün mütəmadi yeniləmələr."
 
 msgid "Long-Term Partnership"
 msgstr "Uzunmüddətli Əməkdaşlıq"
 
+msgid "We stay committed beyond deployment — your success is our ongoing mission."
+msgstr "Biz tətbiqdən sonra da sadiq qalırıq — sizin uğurunuz bizim davamlı missiyamızdır."
+
 msgid "Get In Touch"
-msgstr "Əlaqə Saxla"
+msgstr "Əlaqə Saxlayın"
 
 msgid "START A<br>PROJECT"
-msgstr "LAYİHƏYƏ<br>BAŞLA"
+msgstr "LAYİHƏYƏ<br>BAŞLAYAQ"
+
+msgid ""
+"Ready to secure your operations? Our engineers are available to assess your facility and recommend\n"
+"        the right solution."
+msgstr ""
+"Əməliyyatlarınızı təmin etməyə hazırsınız? Mühəndislərimiz obyektinizi\n"
+"        qiymətləndirmək və düzgün həll tövsiyə etmək üçün mövcuddur."
 
 msgid "Phone"
 msgstr "Telefon"
@@ -182,7 +366,7 @@ msgid "Hours"
 msgstr "İş Saatları"
 
 msgid "Mon – Fri, 09:00 – 18:00 (Baku time)"
-msgstr "Bz – Cümə, 09:00 – 18:00 (Bakı vaxtı)"
+msgstr "Bazar ertəsi – Cümə, 09:00 – 18:00 (Bakı vaxtı)"
 
 msgid "Full Name"
 msgstr "Ad və Soyad"
@@ -203,7 +387,7 @@ msgid "Send Message →"
 msgstr "Mesaj Göndər →"
 
 msgid "Thanks! Your message has been sent."
-msgstr "Təşəkkürlər! Mesajınız göndərildi."
+msgstr "Təşəkkürlər! Mesajınız uğurla göndərildi."
 
 msgid "© 2025 Marine & Oil Security — All rights reserved"
 msgstr "© 2025 Marine & Oil Security — Bütün hüquqlar qorunur"
