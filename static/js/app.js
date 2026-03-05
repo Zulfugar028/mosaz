@@ -66,21 +66,32 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
    Problem: hər frame-də lazımsız classList manipulyasiyası
    ============================================================ */
 (function initSectorSweep() {
-    const sweepDuration = 6000;
+    const sweepDuration = 6000; // ms — CSS animation ilə sinxron
+    const sectors = [
+        { id: 'sector-1', from: 0, to: 90 },
+        { id: 'sector-2', from: 90, to: 180 },
+        { id: 'sector-3', from: 180, to: 270 },
+        { id: 'sector-4', from: 270, to: 360 },
+    ];
 
-    const sweepEl = document.querySelector('.radar-sweep');
-    const labelEls = document.querySelectorAll('.sector-label');
+    // Elementləri bir dəfə tap
+    const sectorEls = sectors.map(s => ({
+        el: document.getElementById(s.id),
+        from: s.from,
+        to: s.to,
+    })).filter(s => s.el);
 
-    if (!sweepEl) return;
+    let lastActive = -1;
 
     function tick() {
         const angle = (Date.now() % sweepDuration) / sweepDuration * 360;
+        const activeIdx = sectorEls.findIndex(s => angle >= s.from && angle < s.to - 10);
 
-        sweepEl.style.transform = `rotate(${angle}deg)`;
-
-        labelEls.forEach(label => {
-            label.style.transform = `rotate(${-angle}deg)`;
-        });
+        // Yalnız dəyişiklik olduqda DOM-a toxun
+        if (activeIdx !== lastActive) {
+            sectorEls.forEach((s, i) => s.el.classList.toggle('active', i === activeIdx));
+            lastActive = activeIdx;
+        }
 
         requestAnimationFrame(tick);
     }
