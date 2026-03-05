@@ -27,7 +27,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 SECRET_KEY = 'django-insecure-q_wd6m#!c7ekkn48+nf@5az!+n9pf_%-r@nza9pks+n&!55@&('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 CSRF_TRUSTED_ORIGINS = [
     "https://mosaz.onrender.com",
