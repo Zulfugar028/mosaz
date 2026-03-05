@@ -139,6 +139,9 @@ msgstr "Həllər"
 msgid "Commitment"
 msgstr "Öhdəlik"
 
+msgid "Commitment to Safety"
+msgstr "Təhlükəsizliyə Öhdəlik"
+
 msgid "Advantage"
 msgstr "Üstünlük"
 
