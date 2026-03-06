@@ -40,6 +40,7 @@
 
     <form action="{% url 'set_language' %}" method="post" class="language-form">
       {% csrf_token %}
+      <input name="next" type="hidden" value="/" />
       <select name="language" onchange="this.form.submit()">
         {% get_current_language as LANGUAGE_CODE %}
         {% get_available_languages as LANGUAGES %}

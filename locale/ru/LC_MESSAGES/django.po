@@ -1,0 +1,570 @@
+# Russian translations for MOS.AZ
+# Marine & Oil Security
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MOS.AZ 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-06 23:08+0400\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: .\mos\templates\mos-az-design.html:33
+msgid "Services"
+msgstr "Услуги"
+
+#: .\mos\templates\mos-az-design.html:34
+msgid "Analytics"
+msgstr "Аналитика"
+
+#: .\mos\templates\mos-az-design.html:35
+msgid "About"
+msgstr "О нас"
+
+#: .\mos\templates\mos-az-design.html:36
+msgid "Contact"
+msgstr "Контакты"
+
+#: .\mos\templates\mos-az-design.html:58
+msgid "Azerbaijan's security partner since 2010"
+msgstr "Партнёр Азербайджана в сфере безопасности с 2010 года"
+
+#: .\mos\templates\mos-az-design.html:64
+msgid ""
+"\n"
+"        Marine & Oil security solutions engineered for Azerbaijan's most "
+"critical infrastructure — offshore, onshore,\n"
+"        and everywhere between.\n"
+"        "
+msgstr ""
+
+#: .\mos\templates\mos-az-design.html:70
+msgid "Explore Services"
+msgstr "Наши услуги"
+
+#: .\mos\templates\mos-az-design.html:71
+msgid "Talk to an Expert ↗"
+msgstr "Связаться с экспертом ↗"
+
+#: .\mos\templates\mos-az-design.html:95
+msgid "Video Analytics"
+msgstr "Видеоаналитика"
+
+#: .\mos\templates\mos-az-design.html:98
+msgid "Cyber Security"
+msgstr "Кибербезопасность"
+
+#: .\mos\templates\mos-az-design.html:101
+msgid "Automation"
+msgstr "Автоматизация"
+
+#: .\mos\templates\mos-az-design.html:104
+msgid "Integration"
+msgstr "Интеграция"
+
+#: .\mos\templates\mos-az-design.html:134
+msgid "What We Do"
+msgstr "Что мы делаем"
+
+#: .\mos\templates\mos-az-design.html:135
+msgid "CORE SERVICES"
+msgstr "ОСНОВНЫЕ УСЛУГИ"
+
+#: .\mos\templates\mos-az-design.html:137
+msgid ""
+"Comprehensive security systems for marine and oil infrastructure across\n"
+"        the Caspian\n"
+"        region."
+msgstr ""
+"Комплексные системы безопасности для морской и нефтяной\n"
+"        инфраструктуры Каспийского региона."
+
+#: .\mos\templates\mos-az-design.html:156
+msgid "Perimeter Protection"
+msgstr "Защита периметра"
+
+#: .\mos\templates\mos-az-design.html:157
+msgid ""
+"Advanced sensor networks and smart barriers secure your perimeter against "
+"unauthorized\n"
+"          access, 24 hours a\n"
+"          day."
+msgstr ""
+"Современные сенсорные сети и интеллектуальные барьеры защищают\n"
+"          ваш периметр от несанкционированного доступа круглосуточно."
+
+#: .\mos\templates\mos-az-design.html:172
+msgid "Access Control"
+msgstr "Контроль доступа"
+
+#: .\mos\templates\mos-az-design.html:173
+msgid ""
+"Biometric and credential-based access management for restricted facilities, "
+"vessels, and\n"
+"          critical zones."
+msgstr ""
+"Биометрическое и учётно-credentiальное управление доступом\n"
+"          для режимных объектов, судов и критических зон."
+
+#: .\mos\templates\mos-az-design.html:186
+msgid "Fire & Hazard Detection"
+msgstr "Обнаружение пожара и опасностей"
+
+#: .\mos\templates\mos-az-design.html:187
+msgid ""
+"Multi-sensor early warning systems for fire, gas leaks, and environmental "
+"hazards on oil and\n"
+"          marine\n"
+"          platforms."
+msgstr ""
+"Многосенсорные системы раннего предупреждения о пожарах,\n"
+"          утечках газа и экологических угрозах на нефтяных и морских "
+"платформах."
+
+#: .\mos\templates\mos-az-design.html:201
+msgid "AI Video Analytics"
+msgstr "Видеоаналитика на базе ИИ"
+
+#: .\mos\templates\mos-az-design.html:202
+msgid ""
+"Machine learning-powered video analysis detects threats, tracks movement, "
+"and generates\n"
+"          real-time alerts."
+msgstr ""
+"Видеоанализ на основе машинного обучения обнаруживает угрозы,\n"
+"          отслеживает перемещения и генерирует оповещения в реальном времени."
+
+#: .\mos\templates\mos-az-design.html:216
+msgid "24/7 Monitoring"
+msgstr "Мониторинг 24/7"
+
+#: .\mos\templates\mos-az-design.html:217
+msgid ""
+"Round-the-clock remote surveillance and rapid response coordination from our "
+"Baku operations\n"
+"          center."
+msgstr ""
+"Круглосуточное дистанционное наблюдение и координация\n"
+"          быстрого реагирования из нашего операционного центра в Баку."
+
+#: .\mos\templates\mos-az-design.html:232
+msgid "Warehouse Security"
+msgstr "Безопасность складов"
+
+#: .\mos\templates\mos-az-design.html:233
+msgid ""
+"Integrated physical and digital security solutions for oil storage, "
+"equipment depots, and\n"
+"          marine logistics\n"
+"          hubs."
+msgstr ""
+"Интегрированные физические и цифровые решения безопасности\n"
+"          для нефтехранилищ, складов оборудования и морских логистических "
+"узлов."
+
+#: .\mos\templates\mos-az-design.html:254
+msgid "ACTIVE DEPLOYMENT"
+msgstr "АКТИВНОЕ РАЗВЁРТЫВАНИЕ"
+
+#: .\mos\templates\mos-az-design.html:269
+msgid "MARINE & OIL SECURITY"
+msgstr "МОРСКАЯ И НЕФТЯНАЯ БЕЗОПАСНОСТЬ"
+
+#: .\mos\templates\mos-az-design.html:270
+msgid "CLOSE"
+msgstr "ЗАКРЫТЬ"
+
+#: .\mos\templates\mos-az-design.html:286
+#: .\mos\templates\mos-az-design.html:287
+msgid "PERSON"
+msgstr "ЧЕЛОВЕК"
+
+#: .\mos\templates\mos-az-design.html:288
+msgid "OBJECT"
+msgstr "ОБЪЕКТ"
+
+#: .\mos\templates\mos-az-design.html:289
+msgid "ZONE"
+msgstr "ЗОНА"
+
+#: .\mos\templates\mos-az-design.html:289
+msgid "CAM"
+msgstr "КАМЕРА"
+
+#: .\mos\templates\mos-az-design.html:298
+msgid "AI-Powered"
+msgstr "На базе ИИ"
+
+#: .\mos\templates\mos-az-design.html:299
+msgid "VIDEO"
+msgstr "ВИДЕО"
+
+#: .\mos\templates\mos-az-design.html:299
+msgid "ANALYTICS"
+msgstr "АНАЛИТИКА"
+
+#: .\mos\templates\mos-az-design.html:300
+msgid ""
+"Our computer vision platform processes live feeds in real-time, identifying "
+"human presence,\n"
+"        vehicle movements,\n"
+"        and anomalous behavior before threats escalate."
+msgstr ""
+"Наша платформа компьютерного зрения обрабатывает прямые трансляции\n"
+"        в реальном времени, выявляя присутствие людей, движение "
+"транспортных\n"
+"        средств и аномальное поведение до того, как угрозы усугубятся."
+
+#: .\mos\templates\mos-az-design.html:304
+msgid "Real-time object & person detection"
+msgstr "Обнаружение объектов и людей в реальном времени"
+
+#: .\mos\templates\mos-az-design.html:305
+msgid "Unauthorized zone entry alerts"
+msgstr "Оповещения о несанкционированном входе в зону"
+
+#: .\mos\templates\mos-az-design.html:306
+msgid "Behavioral anomaly recognition"
+msgstr "Распознавание поведенческих аномалий"
+
+#: .\mos\templates\mos-az-design.html:307
+msgid "License plate and vessel identification"
+msgstr "Идентификация номерных знаков и судов"
+
+#: .\mos\templates\mos-az-design.html:308
+msgid "Thermal imaging integration"
+msgstr "Интеграция тепловизионного оборудования"
+
+#: .\mos\templates\mos-az-design.html:309
+msgid "Cloud & edge deployment options"
+msgstr "Варианты развёртывания в облаке и на периферии"
+
+#: .\mos\templates\mos-az-design.html:311
+msgid "Request a Demo"
+msgstr "Запросить демонстрацию"
+
+#: .\mos\templates\mos-az-design.html:321
+msgid "Who We Are"
+msgstr "Кто мы"
+
+#: .\mos\templates\mos-az-design.html:324
+msgid "ABOUT"
+msgstr "О НАС"
+
+#: .\mos\templates\mos-az-design.html:324
+msgid "US"
+msgstr ""
+
+#: .\mos\templates\mos-az-design.html:327
+msgid ""
+"We are a pioneering force in maritime security, delivering cutting-edge "
+"solutions that protect\n"
+"        vessels, offshore facilities, and marine environments across the "
+"Caspian region and beyond. Our integrated\n"
+"        approach combines advanced technology with deep industry expertise."
+msgstr ""
+"Мы являемся передовой силой в области морской безопасности, предоставляя\n"
+"        передовые решения для защиты судов, морских объектов и морской "
+"среды\n"
+"        в Каспийском регионе и за его пределами. Наш комплексный подход\n"
+"        сочетает передовые технологии с глубокой отраслевой экспертизой."
+
+#: .\mos\templates\mos-az-design.html:337
+msgid "Operational Monitoring"
+msgstr "Оперативный мониторинг"
+
+#: .\mos\templates\mos-az-design.html:341
+msgid "Years of Expertise"
+msgstr "Лет опыта"
+
+#: .\mos\templates\mos-az-design.html:345
+msgid "Global Partners"
+msgstr "Глобальные партнёры"
+
+#: .\mos\templates\mos-az-design.html:349
+msgid "System Uptime"
+msgstr "Бесперебойная работа систем"
+
+#: .\mos\templates\mos-az-design.html:354
+msgid "Our Core Pillars"
+msgstr "Наши основные принципы"
+
+#: .\mos\templates\mos-az-design.html:361
+#: .\mos\templates\mos-az-design.html:371
+msgid "Mission"
+msgstr "Миссия"
+
+#: .\mos\templates\mos-az-design.html:373
+msgid "Providing cutting-edge security solutions for maritime safety."
+msgstr "Предоставление передовых решений безопасности для морской отрасли."
+
+#: .\mos\templates\mos-az-design.html:374
+msgid ""
+"Protecting lives, assets, and marine environments with advanced technologies."
+msgstr "Защита жизней, активов и морской среды с помощью передовых технологий."
+
+#: .\mos\templates\mos-az-design.html:375
+msgid "Developing robust emergency response and prevention mechanisms."
+msgstr ""
+"Разработка надёжных механизмов реагирования на чрезвычайные ситуации и их "
+"предотвращения."
+
+#: .\mos\templates\mos-az-design.html:381
+#: .\mos\templates\mos-az-design.html:388
+msgid "Vision"
+msgstr "Видение"
+
+#: .\mos\templates\mos-az-design.html:390
+msgid "Becoming a global leader in maritime security innovations."
+msgstr "Стать мировым лидером в области инноваций морской безопасности."
+
+#: .\mos\templates\mos-az-design.html:391
+msgid "Fostering a safe and sustainable marine ecosystem."
+msgstr "Формирование безопасной и устойчивой морской экосистемы."
+
+#: .\mos\templates\mos-az-design.html:392
+msgid "Setting international standards in maritime safety and protection."
+msgstr ""
+"Установление международных стандартов в области морской безопасности и "
+"защиты."
+
+#: .\mos\templates\mos-az-design.html:398
+#: .\mos\templates\mos-az-design.html:403
+msgid "Solutions"
+msgstr "Решения"
+
+#: .\mos\templates\mos-az-design.html:405
+msgid "Advanced fire detection and suppression systems."
+msgstr "Современные системы обнаружения и тушения пожаров."
+
+#: .\mos\templates\mos-az-design.html:406
+msgid "Flood prevention technologies and real-time water level monitoring."
+msgstr ""
+"Технологии предотвращения затопления и мониторинг уровня воды в реальном "
+"времени."
+
+#: .\mos\templates\mos-az-design.html:407
+msgid ""
+"Rescue and evacuation systems, including lifeboats and emergency "
+"communication."
+msgstr ""
+"Системы спасения и эвакуации, включая спасательные шлюпки и аварийную связь."
+
+#: .\mos\templates\mos-az-design.html:413
+msgid "Commitment"
+msgstr "Обязательства"
+
+#: .\mos\templates\mos-az-design.html:420
+msgid "Commitment to Safety"
+msgstr "Приверженность безопасности"
+
+#: .\mos\templates\mos-az-design.html:422
+msgid "Ensuring top-tier safety for vessels and marine facilities."
+msgstr "Обеспечение безопасности высшего уровня для судов и морских объектов."
+
+#: .\mos\templates\mos-az-design.html:423
+msgid "Partnering with global experts to deliver innovative solutions."
+msgstr ""
+"Сотрудничество с мировыми экспертами для предоставления инновационных "
+"решений."
+
+#: .\mos\templates\mos-az-design.html:424
+msgid "Offering continuous support and maintenance for all security systems."
+msgstr ""
+"Предоставление постоянной поддержки и технического обслуживания всех систем "
+"безопасности."
+
+#: .\mos\templates\mos-az-design.html:430
+#: .\mos\templates\mos-az-design.html:436
+msgid "Advantage"
+msgstr "Преимущество"
+
+#: .\mos\templates\mos-az-design.html:438
+msgid "Highly experienced team with deep maritime expertise."
+msgstr ""
+"Высококвалифицированная команда с глубокой экспертизой в морской отрасли."
+
+#: .\mos\templates\mos-az-design.html:439
+msgid "A diverse range of reliable and certified security systems."
+msgstr "Широкий спектр надёжных и сертифицированных систем безопасности."
+
+#: .\mos\templates\mos-az-design.html:440
+msgid "Unwavering dedication to customer satisfaction and innovation."
+msgstr "Неизменная преданность удовлетворённости клиентов и инновациям."
+
+#: .\mos\templates\mos-az-design.html:446
+#: .\mos\templates\mos-az-design.html:452
+msgid "Technology"
+msgstr "Технологии"
+
+#: .\mos\templates\mos-az-design.html:454
+msgid "AI-driven threat detection systems to safeguard against piracy."
+msgstr "Системы обнаружения угроз на базе ИИ для защиты от пиратства."
+
+#: .\mos\templates\mos-az-design.html:455
+msgid "Integration of IoT devices for real-time monitoring."
+msgstr "Интеграция IoT-устройств для мониторинга в реальном времени."
+
+#: .\mos\templates\mos-az-design.html:456
+msgid "Customizable solutions tailored to specific maritime needs."
+msgstr ""
+"Настраиваемые решения, адаптированные к конкретным потребностям морской "
+"отрасли."
+
+#: .\mos\templates\mos-az-design.html:467
+#: .\mos\templates\mos-az-design.html:474
+msgid "Partnerships"
+msgstr "Партнёрство"
+
+#: .\mos\templates\mos-az-design.html:476
+msgid "Collaborating with top-tier security firms worldwide."
+msgstr "Сотрудничество с ведущими охранными компаниями по всему миру."
+
+#: .\mos\templates\mos-az-design.html:477
+msgid "Participating in international maritime safety conferences."
+msgstr "Участие в международных конференциях по морской безопасности."
+
+#: .\mos\templates\mos-az-design.html:478
+msgid "Building a network of trusted partners for enhanced solutions."
+msgstr "Создание сети надёжных партнёров для улучшенных решений."
+
+#: .\mos\templates\mos-az-design.html:484
+msgid "Sustainability"
+msgstr "Устойчивость"
+
+#: .\mos\templates\mos-az-design.html:492
+msgid "Sustainability Initiatives"
+msgstr "Инициативы в области устойчивого развития"
+
+#: .\mos\templates\mos-az-design.html:494
+msgid "Implementing eco-friendly security technologies."
+msgstr "Внедрение экологически чистых технологий безопасности."
+
+#: .\mos\templates\mos-az-design.html:495
+msgid "Promoting energy-efficient maritime operations."
+msgstr "Продвижение энергоэффективных морских операций."
+
+#: .\mos\templates\mos-az-design.html:496
+msgid "Developing strategies to minimize environmental impact."
+msgstr "Разработка стратегий по минимизации воздействия на окружающую среду."
+
+#: .\mos\templates\mos-az-design.html:509
+msgid "Always Available"
+msgstr "Всегда на связи"
+
+#: .\mos\templates\mos-az-design.html:510
+msgid ""
+"24/7 dedicated customer service for immediate assistance, any time, any zone."
+msgstr ""
+"Круглосуточная служба поддержки клиентов для немедленной помощи в любое "
+"время и в любой зоне."
+
+#: .\mos\templates\mos-az-design.html:513
+msgid "Training Programs"
+msgstr "Программы обучения"
+
+#: .\mos\templates\mos-az-design.html:514
+msgid ""
+"Comprehensive training programs designed to empower your client teams with "
+"confidence."
+msgstr ""
+"Комплексные программы обучения, разработанные для повышения уверенности "
+"команд клиентов."
+
+#: .\mos\templates\mos-az-design.html:517
+msgid "System Updates"
+msgstr "Обновления системы"
+
+#: .\mos\templates\mos-az-design.html:518
+msgid ""
+"Regular updates and upgrades to maintain peak system efficiency and security "
+"standards."
+msgstr ""
+"Регулярные обновления и модернизация для поддержания максимальной "
+"эффективности системы и стандартов безопасности."
+
+#: .\mos\templates\mos-az-design.html:521
+msgid "Long-Term Partnership"
+msgstr "Долгосрочное партнёрство"
+
+#: .\mos\templates\mos-az-design.html:522
+msgid ""
+"We stay committed beyond deployment — your success is our ongoing mission."
+msgstr ""
+"Мы остаёмся преданными даже после внедрения — ваш успех является нашей "
+"постоянной миссией."
+
+#: .\mos\templates\mos-az-design.html:531
+msgid "Get In Touch"
+msgstr "Свяжитесь с нами"
+
+#: .\mos\templates\mos-az-design.html:532
+msgid "START A<br>PROJECT"
+msgstr "НАЧАТЬ<br>ПРОЕКТ"
+
+#: .\mos\templates\mos-az-design.html:537
+msgid "Phone"
+msgstr "Телефон"
+
+#: .\mos\templates\mos-az-design.html:541
+msgid "Email"
+msgstr "Эл. почта"
+
+#: .\mos\templates\mos-az-design.html:545
+msgid "Hours"
+msgstr "Часы работы"
+
+#: .\mos\templates\mos-az-design.html:546
+msgid "Mon – Fri, 09:00 – 18:00 (Baku time)"
+msgstr "Пн – Пт, 09:00 – 18:00 (бакинское время)"
+
+#: .\mos\templates\mos-az-design.html:556
+msgid "Full Name"
+msgstr "Полное имя"
+
+#: .\mos\templates\mos-az-design.html:560
+msgid "Company"
+msgstr "Компания"
+
+#: .\mos\templates\mos-az-design.html:565
+msgid "Email Address"
+msgstr "Адрес эл. почты"
+
+#: .\mos\templates\mos-az-design.html:569
+msgid "Service Interest"
+msgstr "Интересующая услуга"
+
+#: .\mos\templates\mos-az-design.html:573
+msgid "Message"
+msgstr "Сообщение"
+
+#: .\mos\templates\mos-az-design.html:576
+msgid "Send Message →"
+msgstr "Отправить сообщение →"
+
+#: .\mos\templates\mos-az-design.html:579
+msgid "Thanks! Your message has been sent."
+msgstr "Спасибо! Ваше сообщение успешно отправлено."
+
+#: .\mos\templates\mos-az-design.html:587
+msgid "© 2025 Marine & Oil Security — All rights reserved"
+msgstr "© 2025 Marine & Oil Security — Все права защищены"
+
+#: .\mos\templates\mos-az-design.html:588
+msgid "Baku, Azerbaijan"
+msgstr "Баку, Азербайджан"
+
+#~ msgid "STATUS"
+#~ msgstr "СТАТУС"
+
+#~ msgid ""
+#~ "Ready to secure your operations? Our engineers are available to assess "
+#~ "your facility and recommend\n"
+#~ "        the right solution."
+#~ msgstr ""
+#~ "Готовы обезопасить свои операции? Наши инженеры готовы оценить\n"
+#~ "        ваш объект и рекомендовать оптимальное решение."

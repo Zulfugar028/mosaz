@@ -63,7 +63,7 @@ nav {
 }
 
 .logo img {
-    width: 100px;
+    width: 120px;
 }
 
 nav ul {
@@ -1817,7 +1817,7 @@ footer p {
     }
 
     .hero {
-        min-height: 166vh;
+        min-height: 180vh;
         grid-template-columns: 1fr;
     }
 
