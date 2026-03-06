@@ -5274,3 +5274,7 @@ Traceback (most recent call last):
     )
 django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '==LANGUAGE_CODE' from 'lang.0==LANGUAGE_CODE'
 "GET / HTTP/1.1" 500 267732
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
