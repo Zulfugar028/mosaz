@@ -139,12 +139,27 @@ nav ul a:hover {
 }
 
 
+.language-wrapper {
+    padding: 15px;
+    background: var(--deep);
+    color: var(--cyan);
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    border-radius: 4px;
+}
+
+.language-wrapper:hover {
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+}
+
 
 /* ============================================================
    HERO
    ============================================================ */
 .hero {
-    min-height: 100vh;
+    min-height: 115vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;

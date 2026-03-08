@@ -41,7 +41,7 @@
     <form action="{% url 'set_language' %}" method="post" class="language-form">
       {% csrf_token %}
       <input name="next" type="hidden" value="/" />
-      <select name="language" onchange="this.form.submit()">
+      <select class="language-wrapper" name="language" onchange="this.form.submit()">
         {% get_current_language as LANGUAGE_CODE %}
         {% get_available_languages as LANGUAGES %}
         {% for lang in LANGUAGES %}
@@ -84,9 +84,6 @@
           <span class="crosshair"></span>
           <div class="radar-sweep-fill"></div>
           <div class="radar-sweep"></div>
-          <div class="blip"></div>
-          <div class="blip"></div>
-          <div class="blip"></div>
           <div class="sector-line sector-line-1"></div>
           <div class="sector-line sector-line-2"></div>
           <div class="sector-line sector-line-3"></div>
@@ -141,7 +138,7 @@
     <div class="services-grid">
       <div class="service-card" data-service="0">
         <div class="card-bg">
-          <img src="{% static 'mos/images/perimeter-protection.jpg' %}" alt="">
+          <img src="/static/img/perimeter-protection.webp" alt="">
         </div>
         <p class="service-num">01</p>
         <svg class="service-icon" viewBox="0 0 48 48" fill="none">
@@ -161,7 +158,7 @@
       </div>
       <div class="service-card" data-service="1">
         <div class="card-bg">
-          <img src="/static/img/video_analiz.png" alt="">
+          <img src="/static/img/access-control.webp" alt="">
         </div>
         <p class="service-num">02</p>
         <svg class="service-icon" viewBox="0 0 48 48" fill="none">
@@ -176,7 +173,7 @@
       </div>
       <div class="service-card" data-service="2">
         <div class="card-bg">
-          <img src="şəkilin-adı.jpg" alt="">
+          <img src="/static/img/fire-detection.webp" alt="">
         </div>
         <p class="service-num">03</p>
         <svg class="service-icon" viewBox="0 0 48 48" fill="none">
@@ -191,7 +188,7 @@
       </div>
       <div class="service-card" data-service="3">
         <div class="card-bg">
-          <img src="şəkilin-adı.jpg" alt="">
+          <img src="/static/img/ai-video-analytics.webp" alt="">
         </div>
         <p class="service-num">04</p>
         <svg class="service-icon" viewBox="0 0 48 48" fill="none">
@@ -220,7 +217,7 @@
       </div>
       <div class="service-card" data-service="5">
         <div class="card-bg">
-          <img src="şəkilin-adı.jpg" alt="">
+          <img src="/static/img/warehouse-security.webp" alt="">
         </div>
         <p class="service-num">06</p>
         <svg class="service-icon" viewBox="0 0 48 48" fill="none">

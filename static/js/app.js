@@ -125,7 +125,7 @@ function getServices() {
             num: '01',
             title: gettext('Perimeter Protection'),
             desc: gettext('Advanced sensor networks and smart barriers secure your perimeter against unauthorized access around the clock. Our layered approach combines radar, ground sensors, and AI-driven alerting.'),
-            image: '/static/img/system-design.png',
+            image: '/static/img/perimeter-protection.webp',
             icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <circle cx="24" cy="24" r="10" stroke="#00d4ff" stroke-width="1.5"/>
                  <circle cx="24" cy="24" r="20" stroke="#00d4ff" stroke-width="1" stroke-dasharray="3 3"/>
@@ -147,7 +147,7 @@ function getServices() {
             num: '02',
             title: gettext('Access Control'),
             desc: gettext('Biometric and credential-based access management for restricted facilities, vessels, and critical zones. Full audit trails and remote revocation keep your access layer airtight.'),
-            image: '/static/img/usability.png',
+            image: '/static/img/access-control.webp',
             icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <rect x="8" y="8" width="32" height="24" rx="2" stroke="#00d4ff" stroke-width="1.5"/>
                  <path d="M16 38h16M24 32v6" stroke="#00d4ff" stroke-width="1.5"/>
@@ -165,7 +165,7 @@ function getServices() {
             num: '03',
             title: gettext('Fire & Hazard Detection'),
             desc: gettext('Multi-sensor early warning systems for fire, gas leaks, and environmental hazards on oil and marine platforms. Integrated suppression triggers minimize response time.'),
-            image: '/static/img/unification.png',
+            image: '/static/img/fire-detection.webp',
             icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <path d="M24 4L4 16v16l20 12 20-12V16L24 4z" stroke="#00d4ff" stroke-width="1.5"/>
                  <path d="M24 16v16M14 22l10 10 10-10" stroke="#00d4ff" stroke-width="1.5"/>
@@ -182,7 +182,7 @@ function getServices() {
             num: '04',
             title: gettext('AI Video Analytics'),
             desc: gettext('Machine learning-powered video analysis detects threats, tracks movement, and generates real-time alerts \u2014 before incidents escalate into emergencies.'),
-            image: '/static/img/ai.png',
+            image: '/static/img/ai-video-analytics.webp',
             icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <path d="M8 36l8-16 8 8 8-20 8 12" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round"/>
                  <rect x="4" y="4" width="40" height="40" rx="2" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="4 2"/>
@@ -216,7 +216,7 @@ function getServices() {
             num: '06',
             title: gettext('Warehouse Security'),
             desc: gettext('Integrated physical and digital security solutions for oil storage, equipment depots, and marine logistics hubs. From CCTV to inventory tamper-detection.'),
-            image: '/static/img/video_analiz.png',
+            image: '/static/img/warehouse-security.webp',
             icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <rect x="6" y="20" width="36" height="24" rx="2" stroke="#00d4ff" stroke-width="1.5"/>
                  <path d="M16 20v-6a8 8 0 0116 0v6" stroke="#00d4ff" stroke-width="1.5"/>
