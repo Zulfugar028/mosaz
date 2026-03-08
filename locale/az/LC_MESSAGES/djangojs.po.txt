@@ -1,0 +1,137 @@
+# Azerbaijani JS translations for MOS.AZ
+msgid ""
+msgstr ""
+"Project-Id-Version: MOS.AZ 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-07 20:17+0400\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Perimeter Protection"
+msgstr "Perimetr Mühafizəsi"
+
+msgid "Advanced sensor networks and smart barriers secure your perimeter against unauthorized access around the clock. Our layered approach combines radar, ground sensors, and AI-driven alerting."
+msgstr "Qabaqcıl sensor şəbəkələri və ağıllı maneələr perimetrinizi gecə-gündüz icazəsiz girişdən qoruyur. Çoxqatlı yanaşmamız radar, yerüstü sensorlar və süni intellektlə idarə olunan xəbərdarlığı birləşdirir."
+
+msgid "Ground vibration sensors"
+msgstr "Yerüstü vibrasiya sensorları"
+
+msgid "Radar & lidar perimeter scan"
+msgstr "Radar və lidar perimetr skanı"
+
+msgid "Smart barrier integration"
+msgstr "Ağıllı maneə inteqrasiyası"
+
+msgid "Instant breach alerting"
+msgstr "Ani sızma xəbərdarlığı"
+
+msgid "PERIMETER · CASPIAN REGION"
+msgstr "PERİMETR · XƏZƏR REGİONU"
+
+msgid "Access Control"
+msgstr "Girişə Nəzarət"
+
+msgid "Biometric and credential-based access management for restricted facilities, vessels, and critical zones. Full audit trails and remote revocation keep your access layer airtight."
+msgstr "Məhdud müəssisələr, gəmilər və kritik zonalar üçün biometrik və etimadnaməyə əsaslanan giriş idarəetməsi. Tam audit izi və uzaqdan ləğvetmə giriş qatınızı etibarlı saxlayır."
+
+msgid "Fingerprint & iris readers"
+msgstr "Barmaq izi və iris oxuyucuları"
+
+msgid "RFID / smart-card support"
+msgstr "RFID / ağıllı kart dəstəyi"
+
+msgid "Remote access revocation"
+msgstr "Uzaqdan girişin ləğvi"
+
+msgid "Full audit log & reporting"
+msgstr "Tam audit jurnalı və hesabat"
+
+msgid "ACCESS CONTROL · OFFSHORE"
+msgstr "GİRİŞƏ NƏZARƏT · DƏNİZ"
+
+msgid "Fire & Hazard Detection"
+msgstr "Yanğın və Təhlükə Aşkarlanması"
+
+msgid "Multi-sensor early warning systems for fire, gas leaks, and environmental hazards on oil and marine platforms. Integrated suppression triggers minimize response time."
+msgstr "Neft və dəniz platformalarında yanğın, qaz sızması və ətraf mühit təhlükələri üçün çox sensorlu erkən xəbərdarlıq sistemləri. İnteqrasiya edilmiş söndürmə tetikleyiciləri reaksiya vaxtını minimuma endirir."
+
+msgid "Multi-gas leak detection"
+msgstr "Çoxlu qaz sızması aşkarlanması"
+
+msgid "Thermal & flame sensors"
+msgstr "Termal və alov sensorları"
+
+msgid "Automated suppression trigger"
+msgstr "Avtomatik söndürmə tetikleyicisi"
+
+msgid "Platform-wide PA integration"
+msgstr "Platforma genişliyində PA inteqrasiyası"
+
+msgid "HAZARD DETECTION · OFFSHORE"
+msgstr "TƏHLÜKƏ AŞKARLAMA · DƏNİZ"
+
+msgid "AI Video Analytics"
+msgstr "AI Video Analitika"
+
+msgid "Machine learning-powered video analysis detects threats, tracks movement, and generates real-time alerts — before incidents escalate into emergencies."
+msgstr "Maşın öyrənməsi ilə gücləndirilmiş video analizi təhlükələri aşkarlayır, hərəkəti izləyir və real vaxt xəbərdarlıqları yaradır — hadisələr fövqəladə vəziyyətə çevrilmədən əvvəl."
+
+msgid "Real-time object detection"
+msgstr "Real vaxtda obyekt aşkarlanması"
+
+msgid "Behavioural anomaly alerts"
+msgstr "Davranış anomaliyası xəbərdarlıqları"
+
+msgid "License plate recognition"
+msgstr "Nömrə nişanı tanınması"
+
+msgid "Edge & cloud deployment"
+msgstr "Kənar və bulud yerləşdirmə"
+
+msgid "AI ANALYTICS · REAL-TIME"
+msgstr "AI ANALİTİKA · REAL VAXT"
+
+msgid "24/7 Monitoring"
+msgstr "24/7 Monitorinq"
+
+msgid "Round-the-clock remote surveillance and rapid response coordination from our Baku operations centre. Every alert is triaged by trained analysts, not just automated rules."
+msgstr "Bakı əməliyyat mərkəzimizdən gecə-gündüz uzaqdan müşahidə və sürətli reaksiya koordinasiyası. Hər xəbərdarlıq yalnız avtomatik qaydalarla deyil, təlim keçmiş analitiklər tərəfindən dəyərləndirilir."
+
+msgid "24 / 7 analyst coverage"
+msgstr "24/7 analist əhatəsi"
+
+msgid "Sub-60s alert response SLA"
+msgstr "60 saniyədən az xəbərdarlıq reaksiya SLA"
+
+msgid "Baku operations centre"
+msgstr "Bakı əməliyyat mərkəzi"
+
+msgid "Escalation & reporting"
+msgstr "Eskalasiya və hesabat"
+
+msgid "24/7 MONITORING · BAKU OPS"
+msgstr "24/7 MONİTORİNQ · BAKI OPS"
+
+msgid "Warehouse Security"
+msgstr "Anbar Təhlükəsizliyi"
+
+msgid "Integrated physical and digital security solutions for oil storage, equipment depots, and marine logistics hubs. From CCTV to inventory tamper-detection."
+msgstr "Neft anbarları, avadanlıq depoları və dəniz logistika mərkəzləri üçün inteqrasiya edilmiş fiziki və rəqəmsal təhlükəsizlik həlləri. CCTV-dən inventar müdaxilə aşkarlamasına qədər."
+
+msgid "CCTV & perimeter sensors"
+msgstr "CCTV və perimetr sensorları"
+
+msgid "Inventory tamper detection"
+msgstr "İnventar müdaxilə aşkarlanması"
+
+msgid "Visitor management"
+msgstr "Ziyarətçi idarəetməsi"
+
+msgid "Fire & flood safeguards"
+msgstr "Yanğın və daşqın qoruyucuları"
+
+msgid "WAREHOUSE · LOGISTICS"
+msgstr "ANBAR · LOGİSTİKA"

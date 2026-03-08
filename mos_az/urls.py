@@ -18,6 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.i18n import i18n_patterns
+from django.views.i18n import JavaScriptCatalog
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
@@ -25,9 +26,11 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
+    path('jsi18n/', JavaScriptCatalog.as_view(domain='djangojs'), name='javascript-catalog'),
     path('', include('mos.urls')),  # 👈 buraya views yox, app urls qoy
     prefix_default_language=False,
 )
+
 
 # Development zamanı statik fayllar üçün
 from django.conf import settings

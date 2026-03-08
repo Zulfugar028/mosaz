@@ -4,51 +4,76 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MOS.AZ 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-07 20:17+0400\n"
 "Language: az\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: .\mos\templates\mos-az-design.html:33
 msgid "Services"
 msgstr "Xidmətlər"
 
+#: .\mos\templates\mos-az-design.html:34
 msgid "Analytics"
 msgstr "Analitika"
 
+#: .\mos\templates\mos-az-design.html:35
 msgid "About"
 msgstr "Haqqımızda"
 
+#: .\mos\templates\mos-az-design.html:36
 msgid "Contact"
 msgstr "Əlaqə"
 
+#: .\mos\templates\mos-az-design.html:58
 msgid "Azerbaijan's security partner since 2010"
 msgstr "2010-cu ildən Azərbaycanın təhlükəsizlik tərəfdaşı"
 
+#: .\mos\templates\mos-az-design.html:64
+msgid ""
+"\n"
+"        Marine & Oil security solutions engineered for Azerbaijan's most "
+"critical infrastructure — offshore, onshore,\n"
+"        and everywhere between.\n"
+"        "
+msgstr ""
+
+#: .\mos\templates\mos-az-design.html:70
 msgid "Explore Services"
 msgstr "Xidmətləri Kəşf Et"
 
+#: .\mos\templates\mos-az-design.html:71
 msgid "Talk to an Expert ↗"
 msgstr "Mütəxəssislə Əlaqə ↗"
 
+#: .\mos\templates\mos-az-design.html:95
 msgid "Video Analytics"
 msgstr "Video Analitika"
 
+#: .\mos\templates\mos-az-design.html:98
 msgid "Cyber Security"
 msgstr "Kibertəhlükəsizlik"
 
+#: .\mos\templates\mos-az-design.html:101
 msgid "Automation"
 msgstr "Avtomatlaşdırma"
 
+#: .\mos\templates\mos-az-design.html:104
 msgid "Integration"
 msgstr "İnteqrasiya"
 
+#: .\mos\templates\mos-az-design.html:134
 msgid "What We Do"
 msgstr "Nə Edirik"
 
+#: .\mos\templates\mos-az-design.html:135
 msgid "CORE SERVICES"
 msgstr "ƏSAS XİDMƏTLƏR"
 
+#: .\mos\templates\mos-az-design.html:137
 msgid ""
 "Comprehensive security systems for marine and oil infrastructure across\n"
 "        the Caspian\n"
@@ -57,104 +82,133 @@ msgstr ""
 "Xəzər regionu üzrə dəniz və neft infrastrukturu üçün\n"
 "        hərtərəfli təhlükəsizlik sistemləri."
 
+#: .\mos\templates\mos-az-design.html:156
 msgid "Perimeter Protection"
 msgstr "Perimetr Mühafizəsi"
 
+#: .\mos\templates\mos-az-design.html:157
 msgid ""
-"Advanced sensor networks and smart barriers secure your perimeter against unauthorized\n"
+"Advanced sensor networks and smart barriers secure your perimeter against "
+"unauthorized\n"
 "          access, 24 hours a\n"
 "          day."
 msgstr ""
 "Qabaqcıl sensor şəbəkələri və ağıllı maneələr perimetrinizi\n"
 "          gün ərzində icazəsiz girişdən qoruyur."
 
+#: .\mos\templates\mos-az-design.html:172
 msgid "Access Control"
 msgstr "Girişə Nəzarət"
 
+#: .\mos\templates\mos-az-design.html:173
 msgid ""
-"Biometric and credential-based access management for restricted facilities, vessels, and\n"
+"Biometric and credential-based access management for restricted facilities, "
+"vessels, and\n"
 "          critical zones."
 msgstr ""
 "Məhdud müəssisələr, gəmilər və kritik zonalar üçün\n"
 "          biometrik və etimadnaməyə əsaslanan giriş idarəetməsi."
 
+#: .\mos\templates\mos-az-design.html:186
 msgid "Fire & Hazard Detection"
 msgstr "Yanğın və Təhlükə Aşkarlanması"
 
+#: .\mos\templates\mos-az-design.html:187
 msgid ""
-"Multi-sensor early warning systems for fire, gas leaks, and environmental hazards on oil and\n"
+"Multi-sensor early warning systems for fire, gas leaks, and environmental "
+"hazards on oil and\n"
 "          marine\n"
 "          platforms."
 msgstr ""
 "Neft və dəniz platformalarında yanğın, qaz sızması və ətraf mühit\n"
 "          təhlükələri üçün çox sensorlu erkən xəbərdarlıq sistemləri."
 
+#: .\mos\templates\mos-az-design.html:201
 msgid "AI Video Analytics"
 msgstr "AI Video Analitika"
 
+#: .\mos\templates\mos-az-design.html:202
 msgid ""
-"Machine learning-powered video analysis detects threats, tracks movement, and generates\n"
+"Machine learning-powered video analysis detects threats, tracks movement, "
+"and generates\n"
 "          real-time alerts."
 msgstr ""
 "Maşın öyrənməsi ilə gücləndirilmiş video analizi təhlükələri aşkarlayır,\n"
 "          hərəkəti izləyir və real vaxt xəbərdarlıqları yaradır."
 
+#: .\mos\templates\mos-az-design.html:216
 msgid "24/7 Monitoring"
 msgstr "24/7 Monitorinq"
 
+#: .\mos\templates\mos-az-design.html:217
 msgid ""
-"Round-the-clock remote surveillance and rapid response coordination from our Baku operations\n"
+"Round-the-clock remote surveillance and rapid response coordination from our "
+"Baku operations\n"
 "          center."
 msgstr ""
 "Bakı əməliyyat mərkəzimizdən gecə-gündüz uzaqdan müşahidə\n"
 "          və sürətli reaksiya koordinasiyası."
 
+#: .\mos\templates\mos-az-design.html:232
 msgid "Warehouse Security"
 msgstr "Anbar Təhlükəsizliyi"
 
+#: .\mos\templates\mos-az-design.html:233
 msgid ""
-"Integrated physical and digital security solutions for oil storage, equipment depots, and\n"
+"Integrated physical and digital security solutions for oil storage, "
+"equipment depots, and\n"
 "          marine logistics\n"
 "          hubs."
 msgstr ""
 "Neft anbarları, avadanlıq depoları və dəniz logistika\n"
-"          mərkəzləri üçün inteqrasiya edilmiş fiziki və rəqəmsal təhlükəsizlik həlləri."
+"          mərkəzləri üçün inteqrasiya edilmiş fiziki və rəqəmsal "
+"təhlükəsizlik həlləri."
 
+#: .\mos\templates\mos-az-design.html:254
 msgid "ACTIVE DEPLOYMENT"
 msgstr "AKTİV TƏTBİQ"
 
+#: .\mos\templates\mos-az-design.html:269
 msgid "MARINE & OIL SECURITY"
 msgstr "DƏNİZ VƏ NEFT TƏHLÜKƏSİZLİYİ"
 
+#: .\mos\templates\mos-az-design.html:270
 msgid "CLOSE"
 msgstr "BAĞLA"
 
+#: .\mos\templates\mos-az-design.html:286
+#: .\mos\templates\mos-az-design.html:287
 msgid "PERSON"
 msgstr "ŞƏXS"
 
+#: .\mos\templates\mos-az-design.html:288
 msgid "OBJECT"
 msgstr "OBYEKT"
 
+#: .\mos\templates\mos-az-design.html:289
 msgid "ZONE"
 msgstr "ZONA"
 
+#: .\mos\templates\mos-az-design.html:289
 msgid "CAM"
 msgstr "KAMERA"
 
-msgid "STATUS"
-msgstr "VƏZIYYƏT"
-
+#: .\mos\templates\mos-az-design.html:298
 msgid "AI-Powered"
 msgstr "Süni İntellektlə İdarə Olunan"
 
+#: .\mos\templates\mos-az-design.html:299
 msgid "VIDEO"
 msgstr "VİDEO"
 
+#: .\mos\templates\mos-az-design.html:299
 msgid "ANALYTICS"
 msgstr "ANALİTİKA"
 
+#: .\mos\templates\mos-az-design.html:300
 msgid ""
-"Our computer vision platform processes live feeds in real-time, identifying human presence,\n"
+"Our computer vision platform processes live feeds in real-time, identifying "
+"human presence,\n"
 "        vehicle movements,\n"
 "        and anomalous behavior before threats escalate."
 msgstr ""
@@ -162,235 +216,359 @@ msgstr ""
 "        insan varlığını, nəqliyyat hərəkətlərini və anormal davranışı\n"
 "        təhlükələr böyümədən əvvəl müəyyənləşdirir."
 
+#: .\mos\templates\mos-az-design.html:304
 msgid "Real-time object & person detection"
 msgstr "Real vaxtda obyekt və şəxs aşkarlanması"
 
+#: .\mos\templates\mos-az-design.html:305
 msgid "Unauthorized zone entry alerts"
 msgstr "İcazəsiz zonaya giriş xəbərdarlıqları"
 
+#: .\mos\templates\mos-az-design.html:306
 msgid "Behavioral anomaly recognition"
 msgstr "Davranış anomaliyasının tanınması"
 
+#: .\mos\templates\mos-az-design.html:307
 msgid "License plate and vessel identification"
 msgstr "Nömrə nişanı və gəmi identifikasiyası"
 
+#: .\mos\templates\mos-az-design.html:308
 msgid "Thermal imaging integration"
 msgstr "Termal görüntüləmə inteqrasiyası"
 
+#: .\mos\templates\mos-az-design.html:309
 msgid "Cloud & edge deployment options"
 msgstr "Bulud və kənar yerləşdirmə seçimləri"
 
+#: .\mos\templates\mos-az-design.html:311
 msgid "Request a Demo"
 msgstr "Demo Tələb Et"
 
+#: .\mos\templates\mos-az-design.html:321
 msgid "Who We Are"
 msgstr "Biz Kimik"
 
+#: .\mos\templates\mos-az-design.html:324
 msgid "ABOUT"
 msgstr "HAQQINDA"
 
+#: .\mos\templates\mos-az-design.html:324
 msgid "US"
 msgstr "BİZ"
 
+#: .\mos\templates\mos-az-design.html:327
 msgid ""
-"We are a pioneering force in maritime security, delivering cutting-edge solutions that protect\n"
-"        vessels, offshore facilities, and marine environments across the Caspian region and beyond. Our integrated\n"
+"We are a pioneering force in maritime security, delivering cutting-edge "
+"solutions that protect\n"
+"        vessels, offshore facilities, and marine environments across the "
+"Caspian region and beyond. Our integrated\n"
 "        approach combines advanced technology with deep industry expertise."
 msgstr ""
 "Biz dənizçilik təhlükəsizliyində öncül bir qüvvəyik — Xəzər regionu və onun\n"
-"        hüdudlarından kənarda gəmiləri, dəniz kənarı obyektləri və dəniz mühitini qoruyan\n"
-"        ən müasir həllər təqdim edirik. İnteqrasiya edilmiş yanaşmamız qabaqcıl\n"
+"        hüdudlarından kənarda gəmiləri, dəniz kənarı obyektləri və dəniz "
+"mühitini qoruyan\n"
+"        ən müasir həllər təqdim edirik. İnteqrasiya edilmiş yanaşmamız "
+"qabaqcıl\n"
 "        texnologiyanı dərin sənaye təcrübəsi ilə birləşdirir."
 
+#: .\mos\templates\mos-az-design.html:337
 msgid "Operational Monitoring"
 msgstr "Operativ Monitorinq"
 
+#: .\mos\templates\mos-az-design.html:341
 msgid "Years of Expertise"
 msgstr "İllik Təcrübə"
 
+#: .\mos\templates\mos-az-design.html:345
 msgid "Global Partners"
 msgstr "Qlobal Tərəfdaşlar"
 
+#: .\mos\templates\mos-az-design.html:349
 msgid "System Uptime"
 msgstr "Sistemin Fasiləsiz İşləməsi"
 
+#: .\mos\templates\mos-az-design.html:354
 msgid "Our Core Pillars"
 msgstr "Əsas Prinsiplərimiz"
 
+#: .\mos\templates\mos-az-design.html:361
+#: .\mos\templates\mos-az-design.html:371
 msgid "Mission"
 msgstr "Missiya"
 
+#: .\mos\templates\mos-az-design.html:373
 msgid "Providing cutting-edge security solutions for maritime safety."
-msgstr "Dənizçilik təhlükəsizliyi üçün ən müasir təhlükəsizlik həlləri təqdim etmək."
+msgstr ""
+"Dənizçilik təhlükəsizliyi üçün ən müasir təhlükəsizlik həlləri təqdim etmək."
 
-msgid "Protecting lives, assets, and marine environments with advanced technologies."
+#: .\mos\templates\mos-az-design.html:374
+msgid ""
+"Protecting lives, assets, and marine environments with advanced technologies."
 msgstr "Qabaqcıl texnologiyalarla həyatı, aktivləri və dəniz mühitini qorumaq."
 
+#: .\mos\templates\mos-az-design.html:375
 msgid "Developing robust emergency response and prevention mechanisms."
-msgstr "Güclü fövqəladə vəziyyət reaksiyası və profilaktika mexanizmləri inkişaf etdirmək."
+msgstr ""
+"Güclü fövqəladə vəziyyət reaksiyası və profilaktika mexanizmləri inkişaf "
+"etdirmək."
 
+#: .\mos\templates\mos-az-design.html:381
+#: .\mos\templates\mos-az-design.html:388
 msgid "Vision"
 msgstr "Vizyon"
 
+#: .\mos\templates\mos-az-design.html:390
 msgid "Becoming a global leader in maritime security innovations."
 msgstr "Dənizçilik təhlükəsizliyi innovasiyalarında qlobal liderə çevrilmək."
 
+#: .\mos\templates\mos-az-design.html:391
 msgid "Fostering a safe and sustainable marine ecosystem."
 msgstr "Təhlükəsiz və dayanıqlı dəniz ekosistemi formalaşdırmaq."
 
+#: .\mos\templates\mos-az-design.html:392
 msgid "Setting international standards in maritime safety and protection."
-msgstr "Dənizçilik təhlükəsizliyi və mühafizəsində beynəlxalq standartlar müəyyənləşdirmək."
+msgstr ""
+"Dənizçilik təhlükəsizliyi və mühafizəsində beynəlxalq standartlar "
+"müəyyənləşdirmək."
 
+#: .\mos\templates\mos-az-design.html:398
+#: .\mos\templates\mos-az-design.html:403
 msgid "Solutions"
 msgstr "Həllər"
 
+#: .\mos\templates\mos-az-design.html:405
 msgid "Advanced fire detection and suppression systems."
 msgstr "Qabaqcıl yanğın aşkarlama və söndürmə sistemləri."
 
+#: .\mos\templates\mos-az-design.html:406
 msgid "Flood prevention technologies and real-time water level monitoring."
-msgstr "Daşqın qarşısının alınması texnologiyaları və real vaxtda su səviyyəsi monitorinqi."
+msgstr ""
+"Daşqın qarşısının alınması texnologiyaları və real vaxtda su səviyyəsi "
+"monitorinqi."
 
-msgid "Rescue and evacuation systems, including lifeboats and emergency communication."
-msgstr "Xilasetmə qayıqları və fövqəladə rabitə daxil olmaqla xilasetmə və təxliyyə sistemləri."
+#: .\mos\templates\mos-az-design.html:407
+msgid ""
+"Rescue and evacuation systems, including lifeboats and emergency "
+"communication."
+msgstr ""
+"Xilasetmə qayıqları və fövqəladə rabitə daxil olmaqla xilasetmə və təxliyyə "
+"sistemləri."
 
+#: .\mos\templates\mos-az-design.html:413
 msgid "Commitment"
 msgstr "Öhdəlik"
 
+#: .\mos\templates\mos-az-design.html:420
 msgid "Commitment to Safety"
 msgstr "Təhlükəsizliyə Sadiqlik"
 
+#: .\mos\templates\mos-az-design.html:422
 msgid "Ensuring top-tier safety for vessels and marine facilities."
-msgstr "Gəmilər və dəniz obyektləri üçün ən yüksək səviyyəli təhlükəsizliyin təmin edilməsi."
+msgstr ""
+"Gəmilər və dəniz obyektləri üçün ən yüksək səviyyəli təhlükəsizliyin təmin "
+"edilməsi."
 
+#: .\mos\templates\mos-az-design.html:423
 msgid "Partnering with global experts to deliver innovative solutions."
 msgstr "İnnovativ həllər təqdim etmək üçün qlobal mütəxəssislərlə əməkdaşlıq."
 
+#: .\mos\templates\mos-az-design.html:424
 msgid "Offering continuous support and maintenance for all security systems."
-msgstr "Bütün təhlükəsizlik sistemləri üçün davamlı dəstək və texniki xidmət göstərilməsi."
+msgstr ""
+"Bütün təhlükəsizlik sistemləri üçün davamlı dəstək və texniki xidmət "
+"göstərilməsi."
 
+#: .\mos\templates\mos-az-design.html:430
+#: .\mos\templates\mos-az-design.html:436
 msgid "Advantage"
 msgstr "Üstünlük"
 
+#: .\mos\templates\mos-az-design.html:438
 msgid "Highly experienced team with deep maritime expertise."
 msgstr "Dərin dənizçilik təcrübəsinə malik yüksək ixtisaslı komanda."
 
+#: .\mos\templates\mos-az-design.html:439
 msgid "A diverse range of reliable and certified security systems."
-msgstr "Etibarlı və sertifikatlaşdırılmış təhlükəsizlik sistemlərinin geniş çeşidi."
+msgstr ""
+"Etibarlı və sertifikatlaşdırılmış təhlükəsizlik sistemlərinin geniş çeşidi."
 
+#: .\mos\templates\mos-az-design.html:440
 msgid "Unwavering dedication to customer satisfaction and innovation."
 msgstr "Müştəri məmnuniyyəti və innovasiyaya sarsılmaz bağlılıq."
 
+#: .\mos\templates\mos-az-design.html:446
+#: .\mos\templates\mos-az-design.html:452
 msgid "Technology"
 msgstr "Texnologiya"
 
+#: .\mos\templates\mos-az-design.html:454
 msgid "AI-driven threat detection systems to safeguard against piracy."
-msgstr "Piratçılığa qarşı mühafizə üçün süni intellektlə idarə olunan təhlükə aşkarlama sistemləri."
+msgstr ""
+"Piratçılığa qarşı mühafizə üçün süni intellektlə idarə olunan təhlükə "
+"aşkarlama sistemləri."
 
+#: .\mos\templates\mos-az-design.html:455
 msgid "Integration of IoT devices for real-time monitoring."
 msgstr "Real vaxtda monitorinq üçün IoT cihazlarının inteqrasiyası."
 
+#: .\mos\templates\mos-az-design.html:456
 msgid "Customizable solutions tailored to specific maritime needs."
-msgstr "Xüsusi dənizçilik tələblərinə uyğunlaşdırılmış fərdiləşdirilə bilən həllər."
+msgstr ""
+"Xüsusi dənizçilik tələblərinə uyğunlaşdırılmış fərdiləşdirilə bilən həllər."
 
+#: .\mos\templates\mos-az-design.html:467
+#: .\mos\templates\mos-az-design.html:474
 msgid "Partnerships"
 msgstr "Tərəfdaşlıq"
 
+#: .\mos\templates\mos-az-design.html:476
 msgid "Collaborating with top-tier security firms worldwide."
 msgstr "Dünya üzrə aparıcı təhlükəsizlik şirkətləri ilə əməkdaşlıq."
 
+#: .\mos\templates\mos-az-design.html:477
 msgid "Participating in international maritime safety conferences."
 msgstr "Beynəlxalq dənizçilik təhlükəsizliyi konfranslarında iştirak."
 
+#: .\mos\templates\mos-az-design.html:478
 msgid "Building a network of trusted partners for enhanced solutions."
-msgstr "Təkmilləşdirilmiş həllər üçün etibarlı tərəfdaşlar şəbəkəsinin qurulması."
+msgstr ""
+"Təkmilləşdirilmiş həllər üçün etibarlı tərəfdaşlar şəbəkəsinin qurulması."
 
+#: .\mos\templates\mos-az-design.html:484
 msgid "Sustainability"
 msgstr "Dayanıqlılıq"
 
+#: .\mos\templates\mos-az-design.html:492
 msgid "Sustainability Initiatives"
 msgstr "Dayanıqlılıq Təşəbbüsləri"
 
+#: .\mos\templates\mos-az-design.html:494
 msgid "Implementing eco-friendly security technologies."
 msgstr "Ekoloji cəhətdən təmiz təhlükəsizlik texnologiyalarının tətbiqi."
 
+#: .\mos\templates\mos-az-design.html:495
 msgid "Promoting energy-efficient maritime operations."
 msgstr "Enerjiyə qənaətli dəniz əməliyyatlarının təşviqi."
 
+#: .\mos\templates\mos-az-design.html:496
 msgid "Developing strategies to minimize environmental impact."
-msgstr "Ətraf mühitə təsiri minimuma endirmək üçün strategiyaların işlənib hazırlanması."
+msgstr ""
+"Ətraf mühitə təsiri minimuma endirmək üçün strategiyaların işlənib "
+"hazırlanması."
 
+#: .\mos\templates\mos-az-design.html:509
 msgid "Always Available"
 msgstr "Hər Zaman Aktiv"
 
-msgid "24/7 dedicated customer service for immediate assistance, any time, any zone."
-msgstr "İstənilən vaxt, istənilən zonada dərhal yardım üçün 24/7 xüsusi müştəri xidməti."
+#: .\mos\templates\mos-az-design.html:510
+msgid ""
+"24/7 dedicated customer service for immediate assistance, any time, any zone."
+msgstr ""
+"İstənilən vaxt, istənilən zonada dərhal yardım üçün 24/7 xüsusi müştəri "
+"xidməti."
 
+#: .\mos\templates\mos-az-design.html:513
 msgid "Training Programs"
 msgstr "Təlim Proqramları"
 
-msgid "Comprehensive training programs designed to empower your client teams with confidence."
-msgstr "Müştəri komandalarınızı inamla gücləndirmək üçün hazırlanmış hərtərəfli təlim proqramları."
+#: .\mos\templates\mos-az-design.html:514
+msgid ""
+"Comprehensive training programs designed to empower your client teams with "
+"confidence."
+msgstr ""
+"Müştəri komandalarınızı inamla gücləndirmək üçün hazırlanmış hərtərəfli "
+"təlim proqramları."
 
+#: .\mos\templates\mos-az-design.html:517
 msgid "System Updates"
 msgstr "Sistem Yeniləmələri"
 
-msgid "Regular updates and upgrades to maintain peak system efficiency and security standards."
-msgstr "Sistemin maksimal səmərəliliyini və təhlükəsizlik standartlarını qorumaq üçün mütəmadi yeniləmələr."
+#: .\mos\templates\mos-az-design.html:518
+msgid ""
+"Regular updates and upgrades to maintain peak system efficiency and security "
+"standards."
+msgstr ""
+"Sistemin maksimal səmərəliliyini və təhlükəsizlik standartlarını qorumaq "
+"üçün mütəmadi yeniləmələr."
 
+#: .\mos\templates\mos-az-design.html:521
 msgid "Long-Term Partnership"
 msgstr "Uzunmüddətli Əməkdaşlıq"
 
-msgid "We stay committed beyond deployment — your success is our ongoing mission."
-msgstr "Biz tətbiqdən sonra da sadiq qalırıq — sizin uğurunuz bizim davamlı missiyamızdır."
+#: .\mos\templates\mos-az-design.html:522
+msgid ""
+"We stay committed beyond deployment — your success is our ongoing mission."
+msgstr ""
+"Biz tətbiqdən sonra da sadiq qalırıq — sizin uğurunuz bizim davamlı "
+"missiyamızdır."
 
+#: .\mos\templates\mos-az-design.html:531
 msgid "Get In Touch"
 msgstr "Əlaqə Saxlayın"
 
+#: .\mos\templates\mos-az-design.html:532
 msgid "START A<br>PROJECT"
 msgstr "LAYİHƏYƏ<br>BAŞLAYAQ"
 
-msgid ""
-"Ready to secure your operations? Our engineers are available to assess your facility and recommend\n"
-"        the right solution."
-msgstr ""
-"Əməliyyatlarınızı təmin etməyə hazırsınız? Mühəndislərimiz obyektinizi\n"
-"        qiymətləndirmək və düzgün həll tövsiyə etmək üçün mövcuddur."
-
+#: .\mos\templates\mos-az-design.html:537
 msgid "Phone"
 msgstr "Telefon"
 
+#: .\mos\templates\mos-az-design.html:541
 msgid "Email"
 msgstr "E-poçt"
 
+#: .\mos\templates\mos-az-design.html:545
 msgid "Hours"
 msgstr "İş Saatları"
 
+#: .\mos\templates\mos-az-design.html:546
 msgid "Mon – Fri, 09:00 – 18:00 (Baku time)"
 msgstr "Bazar ertəsi – Cümə, 09:00 – 18:00 (Bakı vaxtı)"
 
+#: .\mos\templates\mos-az-design.html:556
 msgid "Full Name"
 msgstr "Ad və Soyad"
 
+#: .\mos\templates\mos-az-design.html:560
 msgid "Company"
 msgstr "Şirkət"
 
+#: .\mos\templates\mos-az-design.html:565
 msgid "Email Address"
 msgstr "E-poçt Ünvanı"
 
+#: .\mos\templates\mos-az-design.html:569
 msgid "Service Interest"
 msgstr "Maraqlandığınız Xidmət"
 
+#: .\mos\templates\mos-az-design.html:573
 msgid "Message"
 msgstr "Mesaj"
 
+#: .\mos\templates\mos-az-design.html:576
 msgid "Send Message →"
 msgstr "Mesaj Göndər →"
 
+#: .\mos\templates\mos-az-design.html:579
 msgid "Thanks! Your message has been sent."
 msgstr "Təşəkkürlər! Mesajınız uğurla göndərildi."
 
+#: .\mos\templates\mos-az-design.html:587
 msgid "© 2025 Marine & Oil Security — All rights reserved"
 msgstr "© 2025 Marine & Oil Security — Bütün hüquqlar qorunur"
 
+#: .\mos\templates\mos-az-design.html:588
 msgid "Baku, Azerbaijan"
 msgstr "Bakı, Azərbaycan"
+
+#~ msgid "STATUS"
+#~ msgstr "VƏZIYYƏT"
+
+#~ msgid ""
+#~ "Ready to secure your operations? Our engineers are available to assess "
+#~ "your facility and recommend\n"
+#~ "        the right solution."
+#~ msgstr ""
+#~ "Əməliyyatlarınızı təmin etməyə hazırsınız? Mühəndislərimiz obyektinizi\n"
+#~ "        qiymətləndirmək və düzgün həll tövsiyə etmək üçün mövcuddur."
