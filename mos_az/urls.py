@@ -27,7 +27,7 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
     path('jsi18n/', JavaScriptCatalog.as_view(domain='djangojs'), name='javascript-catalog'),
-    path('', include('mos.urls')),  # 👈 buraya views yox, app urls qoy
+    path('', include('mos.urls')),
     prefix_default_language=False,
 )
 

@@ -252,16 +252,6 @@ nav ul a:hover {
     background: linear-gradient(to bottom, var(--cyan), transparent);
     box-shadow: 0 0 20px var(--cyan);
     will-change: transform;
-    animation: radarRotate 4s linear infinite;
-}
-
-@keyframes radarRotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 .blip {

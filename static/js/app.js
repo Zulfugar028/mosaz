@@ -363,3 +363,50 @@ function getServices() {
         });
     });
 })();
+
+
+const sweepEl = document.querySelector('.radar-sweep');
+const sweepFillEl = document.querySelector('.radar-sweep-fill');
+const DURATION = 10000;
+
+const sectors = {
+    'sector-1': { start: 315, end: 45 },
+    'sector-2': { start: 45, end: 135 },
+    'sector-3': { start: 135, end: 225 },
+    'sector-4': { start: 225, end: 315 },
+};
+
+function isAngleInSector(angle, start, end) {
+    if (start > end) return angle >= start || angle < end;
+    return angle >= start && angle < end;
+}
+
+let startTime = null;
+
+function animate(timestamp) {
+    if (!startTime) startTime = timestamp;
+
+    const elapsed = (timestamp - startTime) % DURATION;
+    const rawAngle = (elapsed / DURATION) * 360;
+    const angle = (rawAngle + 90) % 360;
+
+    sweepEl.style.transform = `rotate(${rawAngle}deg)`;
+    if (sweepFillEl) {
+        sweepFillEl.style.transform = `rotate(${rawAngle}deg)`;
+    }
+
+    for (const [id, range] of Object.entries(sectors)) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+
+        if (isAngleInSector(angle, range.start, range.end)) {
+            el.classList.add('active');
+        } else {
+            el.classList.remove('active');
+        }
+    }
+
+    requestAnimationFrame(animate);
+}
+
+requestAnimationFrame(animate);
