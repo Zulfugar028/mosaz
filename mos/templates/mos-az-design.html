@@ -11,7 +11,7 @@
   <title>MOS — Marine & Oil Security</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="{% static 'css/reset.css' %}">
@@ -273,7 +273,7 @@
   <section class="video-section" id="analytics">
     <div class="video-visual">
       <div class="cam-feed">
-        <img class="cam-image" src="/static/img/face-detect3.jpg" alt="Camera feed" loading="lazy" />
+        <img class="cam-image" src="/static/img/face-detect4.jpg" alt="Camera feed" loading="lazy" />
         <div class="cam-grid"></div>
         <div class="cam-overlay"></div>
         <div class="cam-corner tl"></div>
@@ -283,17 +283,16 @@
         <div class="detect-box"><span class="detect-label">{% trans "PERSON" %} — 98.2%</span></div>
         <div class="detect-box"><span class="detect-label">{% trans "PERSON" %} — 95.7%</span></div>
         <div class="detect-box"><span class="detect-label">{% trans "OBJECT" %} — 87.1%</span></div>
-        <div class="cam-info">{% trans "ZONE" %}: SECTOR-4<br>{% trans "CAM" %}: C-07<br>02:14:37 UTC<br>{% trans
-          "STATUS" %}: ACTIVE</div>
+        <div class="cam-info">{% trans "ZONE" %}: {% trans "SECTOR-4" %}<br>{% trans "CAM" %}: C-07<br>02:14:37 UTC<br>{% trans "STATUS" %}: {% trans "ACTIVE" %}</div>
         <div class="cam-rec">
-          <div class="cam-rec-dot"></div>REC
+          <div class="cam-rec-dot"></div>{% trans "REC" %}
         </div>
         <div class="scan-line-cam"></div>
       </div>
     </div>
     <div class="video-content">
       <p class="section-tag">{% trans "AI-Powered" %}</p>
-      <h2>{% trans "VIDEO" %}<br>{% trans "ANALYTICS" %}</h2>
+      <h2>{% trans "VIDEO" %} {% trans "ANALYTICS" %}</h2>
       <p>{% blocktrans %}Our computer vision platform processes live feeds in real-time, identifying human presence,
         vehicle movements,
         and anomalous behavior before threats escalate.{% endblocktrans %}</p>
@@ -527,8 +526,7 @@
     <div class="contact-info">
       <p class="section-tag">{% trans "Get In Touch" %}</p>
       <h2>{% trans "START A<br>PROJECT" %}</h2>
-      <p>{% trans "Ready to secure your operations? Our engineers are available to assess your facility and recommend
-        the right solution." %}</p>
+      <p>{% trans "Ready to secure your operations? Our engineers are available to assess your facility and recommend the right solution." %}</p>
       <div class="contact-details">
         <div class="contact-item">
           <span class="contact-item-label">{% trans "Phone" %}</span>

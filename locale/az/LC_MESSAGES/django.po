@@ -189,6 +189,12 @@ msgstr "OBYEKT"
 msgid "ZONE"
 msgstr "ZONA"
 
+msgid "SECTOR-4"
+msgstr "4-CÜ SEKTOR"
+
+msgid "REC"
+msgstr "VİDEO QEYDİYYAT"
+
 #: .\mos\templates\mos-az-design.html:289
 msgid "CAM"
 msgstr "KAMERA"
@@ -562,13 +568,11 @@ msgstr "© 2025 Marine & Oil Security — Bütün hüquqlar qorunur"
 msgid "Baku, Azerbaijan"
 msgstr "Bakı, Azərbaycan"
 
-#~ msgid "STATUS"
-#~ msgstr "VƏZIYYƏT"
+msgid "STATUS"
+msgstr "VƏZIYYƏT"
 
-#~ msgid ""
-#~ "Ready to secure your operations? Our engineers are available to assess "
-#~ "your facility and recommend\n"
-#~ "        the right solution."
-#~ msgstr ""
-#~ "Əməliyyatlarınızı təmin etməyə hazırsınız? Mühəndislərimiz obyektinizi\n"
-#~ "        qiymətləndirmək və düzgün həll tövsiyə etmək üçün mövcuddur."
+msgid "ACTIVE"
+msgstr "AKTİV"
+
+msgid "Ready to secure your operations? Our engineers are available to assess your facility and recommend the right solution."
+msgstr "Əməliyyatlarınızı təmin etməyə hazırsınız? Mühəndislərimiz obyektinizi qiymətləndirmək və düzgün həll tövsiyə etmək üçün mövcuddur."

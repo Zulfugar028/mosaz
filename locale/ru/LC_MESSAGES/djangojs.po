@@ -1,0 +1,137 @@
+# Russian JS translations for MOS.AZ
+msgid ""
+msgstr ""
+"Project-Id-Version: MOS.AZ 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-07 20:17+0400\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Perimeter Protection"
+msgstr "Защита периметра"
+
+msgid "Advanced sensor networks and smart barriers secure your perimeter against unauthorized access around the clock. Our layered approach combines radar, ground sensors, and AI-driven alerting."
+msgstr "Передовые сенсорные сети и умные барьеры защищают периметр от несанкционированного доступа круглосуточно. Многоуровневый подход сочетает радар, наземные датчики и оповещение на базе ИИ."
+
+msgid "Ground vibration sensors"
+msgstr "Датчики вибрации грунта"
+
+msgid "Radar & lidar perimeter scan"
+msgstr "Радарное и лидарное сканирование периметра"
+
+msgid "Smart barrier integration"
+msgstr "Интеграция умных барьеров"
+
+msgid "Instant breach alerting"
+msgstr "Мгновенное оповещение о вторжении"
+
+msgid "PERIMETER · CASPIAN REGION"
+msgstr "ПЕРИМЕТР · КАСПИЙСКИЙ РЕГИОН"
+
+msgid "Access Control"
+msgstr "Контроль доступа"
+
+msgid "Biometric and credential-based access management for restricted facilities, vessels, and critical zones. Full audit trails and remote revocation keep your access layer airtight."
+msgstr "Биометрическое и учётное управление доступом для режимных объектов, судов и критических зон. Полные журналы аудита и удалённый отзыв обеспечивают надёжность уровня доступа."
+
+msgid "Fingerprint & iris readers"
+msgstr "Считыватели отпечатков и радужки"
+
+msgid "RFID / smart-card support"
+msgstr "Поддержка RFID / смарт-карт"
+
+msgid "Remote access revocation"
+msgstr "Удалённый отзыв доступа"
+
+msgid "Full audit log & reporting"
+msgstr "Полный журнал аудита и отчётность"
+
+msgid "ACCESS CONTROL · OFFSHORE"
+msgstr "КОНТРОЛЬ ДОСТУПА · ОФШОР"
+
+msgid "Fire & Hazard Detection"
+msgstr "Обнаружение пожара и опасностей"
+
+msgid "Multi-sensor early warning systems for fire, gas leaks, and environmental hazards on oil and marine platforms. Integrated suppression triggers minimize response time."
+msgstr "Многосенсорные системы раннего предупреждения о пожаре, утечках газа и экологических угрозах на нефтяных и морских платформах. Интегрированные триггеры пожаротушения минимизируют время реагирования."
+
+msgid "Multi-gas leak detection"
+msgstr "Обнаружение утечек нескольких газов"
+
+msgid "Thermal & flame sensors"
+msgstr "Тепловые датчики и датчики пламени"
+
+msgid "Automated suppression trigger"
+msgstr "Автоматический триггер пожаротушения"
+
+msgid "Platform-wide PA integration"
+msgstr "Интеграция системы оповещения платформы"
+
+msgid "HAZARD DETECTION · OFFSHORE"
+msgstr "ОБНАРУЖЕНИЕ УГРОЗ · ОФШОР"
+
+msgid "AI Video Analytics"
+msgstr "ИИ Видеоаналитика"
+
+msgid "Machine learning-powered video analysis detects threats, tracks movement, and generates real-time alerts — before incidents escalate into emergencies."
+msgstr "Видеоанализ на базе машинного обучения обнаруживает угрозы, отслеживает движение и генерирует оповещения в реальном времени — до эскалации инцидентов."
+
+msgid "Real-time object detection"
+msgstr "Обнаружение объектов в реальном времени"
+
+msgid "Behavioural anomaly alerts"
+msgstr "Оповещения об аномалиях поведения"
+
+msgid "License plate recognition"
+msgstr "Распознавание номерных знаков"
+
+msgid "Edge & cloud deployment"
+msgstr "Развёртывание на периферии и в облаке"
+
+msgid "AI ANALYTICS · REAL-TIME"
+msgstr "ИИ АНАЛИТИКА · РЕАЛЬНОЕ ВРЕМЯ"
+
+msgid "24/7 Monitoring"
+msgstr "Мониторинг 24/7"
+
+msgid "Round-the-clock remote surveillance and rapid response coordination from our Baku operations centre. Every alert is triaged by trained analysts, not just automated rules."
+msgstr "Круглосуточное дистанционное наблюдение и координация быстрого реагирования из нашего бакинского операционного центра. Каждое оповещение оценивается обученными аналитиками, а не только автоматическими правилами."
+
+msgid "24 / 7 analyst coverage"
+msgstr "Аналитическое покрытие 24/7"
+
+msgid "Sub-60s alert response SLA"
+msgstr "SLA реагирования менее 60 секунд"
+
+msgid "Baku operations centre"
+msgstr "Бакинский операционный центр"
+
+msgid "Escalation & reporting"
+msgstr "Эскалация и отчётность"
+
+msgid "24/7 MONITORING · BAKU OPS"
+msgstr "МОНИТОРИНГ 24/7 · БАКУ ОПС"
+
+msgid "Warehouse Security"
+msgstr "Безопасность склада"
+
+msgid "Integrated physical and digital security solutions for oil storage, equipment depots, and marine logistics hubs. From CCTV to inventory tamper-detection."
+msgstr "Комплексные физические и цифровые решения безопасности для нефтехранилищ, складов оборудования и морских логистических узлов. От видеонаблюдения до обнаружения вмешательства в инвентарь."
+
+msgid "CCTV & perimeter sensors"
+msgstr "Видеонаблюдение и датчики периметра"
+
+msgid "Inventory tamper detection"
+msgstr "Обнаружение вмешательства в инвентарь"
+
+msgid "Visitor management"
+msgstr "Управление посетителями"
+
+msgid "Fire & flood safeguards"
+msgstr "Защита от пожара и наводнения"
+
+msgid "WAREHOUSE · LOGISTICS"
+msgstr "СКЛАД · ЛОГИСТИКА"
