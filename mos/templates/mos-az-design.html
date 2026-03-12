@@ -283,7 +283,8 @@
         <div class="detect-box"><span class="detect-label">{% trans "PERSON" %} — 98.2%</span></div>
         <div class="detect-box"><span class="detect-label">{% trans "PERSON" %} — 95.7%</span></div>
         <div class="detect-box"><span class="detect-label">{% trans "OBJECT" %} — 87.1%</span></div>
-        <div class="cam-info">{% trans "ZONE" %}: {% trans "SECTOR-4" %}<br>{% trans "CAM" %}: C-07<br>02:14:37 UTC<br>{% trans "STATUS" %}: {% trans "ACTIVE" %}</div>
+        <div class="cam-info">{% trans "ZONE" %}: {% trans "SECTOR-4" %}<br>{% trans "CAM" %}: C-07<br>02:14:37
+          UTC<br>{% trans "STATUS" %}: {% trans "ACTIVE" %}</div>
         <div class="cam-rec">
           <div class="cam-rec-dot"></div>{% trans "REC" %}
         </div>
@@ -332,16 +333,19 @@
         <div class="stat-num">24/7</div>
         <div class="stat-label">{% trans "Operational Monitoring" %}</div>
       </div>
+
       <div class="stat">
-        <div class="stat-num">15+</div>
+        <div class="stat-num" data-target="15">0+</div>
         <div class="stat-label">{% trans "Years of Expertise" %}</div>
       </div>
+
       <div class="stat">
-        <div class="stat-num">40+</div>
+        <div class="stat-num" data-target="40">0+</div>
         <div class="stat-label">{% trans "Global Partners" %}</div>
       </div>
+
       <div class="stat">
-        <div class="stat-num">99.8%</div>
+        <div class="stat-num" data-target="99.8">0%</div>
         <div class="stat-label">{% trans "System Uptime" %}</div>
       </div>
     </div>
@@ -498,7 +502,8 @@
     <!-- ── MANIFESTO BAND (Customer Support) ── -->
     <div class="manifesto">
       <div class="manifesto-heading">
-        CUSTOMER<br><span>SUPPORT</span>
+        <span>{% trans "CUSTOMER" %}</span><br>
+        <span>{% trans "SUPPORT" %}</span>
       </div>
       <div class="manifesto-body">
         <div class="manifesto-item">
@@ -526,7 +531,8 @@
     <div class="contact-info">
       <p class="section-tag">{% trans "Get In Touch" %}</p>
       <h2>{% trans "START A<br>PROJECT" %}</h2>
-      <p>{% trans "Ready to secure your operations? Our engineers are available to assess your facility and recommend the right solution." %}</p>
+      <p>{% trans "Ready to secure your operations? Our engineers are available to assess your facility and recommend
+        the right solution." %}</p>
       <div class="contact-details">
         <div class="contact-item">
           <span class="contact-item-label">{% trans "Phone" %}</span>
@@ -589,7 +595,3 @@
 </body>
 
 </html>
-
-
-
-

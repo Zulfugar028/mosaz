@@ -40,6 +40,11 @@ msgid ""
 "        and everywhere between.\n"
 "        "
 msgstr ""
+"\n"
+"        Azərbaycanın ən kritik infrastruktur obyektləri üçün hazırlanmış "
+"dəniz və neft təhlükəsizlik həlləri — dənizdə, quruda\n"
+"        və onların arasındakı bütün sahələrdə.\n"
+"        "
 
 #: .\mos\templates\mos-az-design.html:70
 msgid "Explore Services"
@@ -60,6 +65,13 @@ msgstr "Kibertəhlükəsizlik"
 #: .\mos\templates\mos-az-design.html:101
 msgid "Automation"
 msgstr "Avtomatlaşdırma"
+
+#: .\mos\templates\mos-az-design.html:501
+msgid "CUSTOMER"
+msgstr "MÜŞTƏRİ"
+
+msgid "SUPPORT"
+msgstr "DƏSTƏYİ"
 
 #: .\mos\templates\mos-az-design.html:104
 msgid "Integration"

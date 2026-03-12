@@ -41,6 +41,12 @@ msgid ""
 "        and everywhere between.\n"
 "        "
 msgstr ""
+"\n"
+"        Решения в области безопасности морской и нефтяной отрасли, "
+"разработанные для наиболее критически важной инфраструктуры Азербайджана — "
+"на море, на суше\n"
+"        и во всех промежуточных зонах.\n"
+"        "
 
 #: .\mos\templates\mos-az-design.html:70
 msgid "Explore Services"
@@ -61,6 +67,12 @@ msgstr "Кибербезопасность"
 #: .\mos\templates\mos-az-design.html:101
 msgid "Automation"
 msgstr "Автоматизация"
+
+msgid "CUSTOMER"
+msgstr "КЛИЕНТ"
+
+msgid "SUPPORT"
+msgstr "ПОДДЕРЖКА"
 
 #: .\mos\templates\mos-az-design.html:104
 msgid "Integration"

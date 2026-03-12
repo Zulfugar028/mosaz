@@ -410,3 +410,51 @@ function animate(timestamp) {
 }
 
 requestAnimationFrame(animate);
+
+
+const counters = document.querySelectorAll('.stat-num[data-target]');
+
+function startCounter(counter) {
+    const target = parseFloat(counter.getAttribute('data-target'));
+    const isDecimal = target % 1 !== 0;
+    const duration = 2000;
+    const stepTime = 20;
+    const steps = duration / stepTime;
+    const increment = target / steps;
+
+    let current = 0;
+
+    const timer = setInterval(() => {
+        current += increment;
+
+        if (current >= target) {
+            current = target;
+            clearInterval(timer);
+        }
+
+        if (isDecimal) {
+            counter.innerText = current.toFixed(1) + "%";
+        } else {
+            counter.innerText = Math.floor(current) + "+";
+        }
+
+    }, stepTime);
+}
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            const counter = entry.target;
+            startCounter(counter);
+
+            observer.unobserve(counter);
+        }
+
+    });
+}, { threshold: 0.6 });
+
+counters.forEach(counter => {
+    observer.observe(counter);
+});
