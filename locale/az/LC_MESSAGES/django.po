@@ -588,3 +588,6 @@ msgstr "AKTİV"
 
 msgid "Ready to secure your operations? Our engineers are available to assess your facility and recommend the right solution."
 msgstr "Əməliyyatlarınızı təmin etməyə hazırsınız? Mühəndislərimiz obyektinizi qiymətləndirmək və düzgün həll tövsiyə etmək üçün mövcuddur."
+
+msgid "Today visitors:"
+msgstr "Bu gün ziyarətçilər:"

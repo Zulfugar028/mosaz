@@ -578,3 +578,6 @@ msgstr "АКТИВ"
 
 msgid "Ready to secure your operations? Our engineers are available to assess your facility and recommend the right solution."
 msgstr "Готовы обезопасить свои операции? Наши инженеры готовы оценить ваш объект и рекомендовать оптимальное решение."
+
+msgid "Today visitors:"
+msgstr "Посетители сегодня:"
