@@ -10,6 +10,5 @@ class ContactRequestAdmin(admin.ModelAdmin):
 
 @admin.register(Visitor)
 class VisitorAdmin(admin.ModelAdmin):
-    list_display = ('ip_address', 'date')
-    list_filter = ('date',)
-    search_fields = ('ip_address',)
+    list_display = ('ip_address', 'date', 'country', 'city')
+    list_filter = ('date', 'country')
