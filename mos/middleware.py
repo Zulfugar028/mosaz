@@ -1,7 +1,7 @@
 from .models import Visitor
 from django.utils import timezone
 from django.contrib.gis.geoip2 import GeoIP2
-from django.conf import settings  # GEOIP_PATH üçün
+from django.conf import settings
 
 class VisitorMiddleware:
     def __init__(self, get_response):
