@@ -17,7 +17,12 @@ class VisitorMiddleware:
         return self.get_response(request)
 
     def get_client_ip(self, request):
+        ip = request.META.get('HTTP_CF_CONNECTING_IP')
+        if ip:
+            return ip
+
         x_forwarded = request.META.get('HTTP_X_FORWARDED_FOR')
         if x_forwarded:
-            return x_forwarded.split(',')[0]
+            return x_forwarded.split(',')[0].strip()
+
         return request.META.get('REMOTE_ADDR')
