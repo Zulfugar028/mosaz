@@ -581,11 +581,17 @@
   </section>
 
   <footer>
+
     <a href="#" class="footer-logo">
       <img src="/static/img/mos_logo_white.png" alt="MOS.AZ" loading="lazy">
     </a>
+
     <p>{% trans "© 2025 Marine & Oil Security — All rights reserved" %}</p>
+
     <p>{% trans "Baku, Azerbaijan" %}</p>
+
+    <p>Today visitors: {{ daily_visitors }}</p>
+    
   </footer>
 
   <script src="{% url 'javascript-catalog' %}"></script>
