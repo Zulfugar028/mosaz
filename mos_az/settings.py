@@ -92,8 +92,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mos_az.wsgi.application'
 
-GEOIP_PATH = BASE_DIR / "geoip"
-
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
