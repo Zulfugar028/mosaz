@@ -172,6 +172,42 @@ nav ul a:hover {
     overflow: hidden;
 }
 
+.azerbaijan-map {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.map-svg {
+    width: 600px;
+    opacity: 0.35;
+    filter: drop-shadow(0 0 25px rgba(0,212,255,0.6));
+}
+
+
+.map-shape {
+    fill: rgba(0,212,255,0.05);
+    stroke: var(--cyan);
+    stroke-width: 2;
+    stroke-dasharray: 8;
+    animation: map-glow 4s ease-in-out infinite;
+}
+
+/* Glow effekti */
+@keyframes map-glow {
+    0%,100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* Yüngül hərəkət */
+@keyframes map-float {
+    0%,100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
 /* ── Radar ── */
 .radar-container {
     position: absolute;

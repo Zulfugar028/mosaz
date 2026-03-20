@@ -9,7 +9,6 @@ class VisitorMiddleware:
         ip = self.get_client_ip(request)
         today = timezone.now().date()
 
-        # Eyni IP gün ərzində 1 dəfə sayılsın
         if ip:
             exists = Visitor.objects.filter(ip_address=ip, date=today).exists()
             if not exists:
