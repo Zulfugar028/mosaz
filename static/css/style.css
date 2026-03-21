@@ -1836,6 +1836,10 @@ footer p {
         grid-template-columns: 1fr;
         gap: 36px;
     }
+
+    .map-svg {
+        width: 408px;
+    }
 }
 
 /* Tablet */
