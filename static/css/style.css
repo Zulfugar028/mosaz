@@ -76,7 +76,7 @@ nav ul a {
     text-decoration: none;
     color: var(--muted);
     font-family: 'Space Mono', monospace;
-    font-size: 0.72rem;
+    font-size: 15px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     transition: color 0.3s ease;

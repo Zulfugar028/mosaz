@@ -13,8 +13,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: .\mos\templates\mos-az-design.html:33
-msgid "Services"
-msgstr "Xidmətlər"
+msgid "Modules"
+msgstr "Modullar"
 
 #: .\mos\templates\mos-az-design.html:34
 msgid "Analytics"
@@ -47,8 +47,8 @@ msgstr ""
 "        "
 
 #: .\mos\templates\mos-az-design.html:70
-msgid "Explore Services"
-msgstr "Xidmətləri Kəşf Et"
+msgid "Explore Modules"
+msgstr "Modulları Kəşf Et"
 
 #: .\mos\templates\mos-az-design.html:71
 msgid "Talk to an Expert ↗"
@@ -82,8 +82,8 @@ msgid "What We Do"
 msgstr "Nə Edirik"
 
 #: .\mos\templates\mos-az-design.html:135
-msgid "CORE SERVICES"
-msgstr "ƏSAS XİDMƏTLƏR"
+msgid "CORE MODULES"
+msgstr "ƏSAS MODULLAR"
 
 #: .\mos\templates\mos-az-design.html:137
 msgid ""

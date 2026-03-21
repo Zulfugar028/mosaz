@@ -14,8 +14,8 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: .\mos\templates\mos-az-design.html:33
-msgid "Services"
-msgstr "Услуги"
+msgid "Modules"
+msgstr "Модули"
 
 #: .\mos\templates\mos-az-design.html:34
 msgid "Analytics"
@@ -49,8 +49,8 @@ msgstr ""
 "        "
 
 #: .\mos\templates\mos-az-design.html:70
-msgid "Explore Services"
-msgstr "Наши услуги"
+msgid "Explore Modules"
+msgstr "Наши модули"
 
 #: .\mos\templates\mos-az-design.html:71
 msgid "Talk to an Expert ↗"
@@ -83,8 +83,8 @@ msgid "What We Do"
 msgstr "Что мы делаем"
 
 #: .\mos\templates\mos-az-design.html:135
-msgid "CORE SERVICES"
-msgstr "ОСНОВНЫЕ УСЛУГИ"
+msgid "CORE MODULES"
+msgstr "ОСНОВНЫЕ МОДУЛЬЫ"
 
 #: .\mos\templates\mos-az-design.html:137
 msgid ""

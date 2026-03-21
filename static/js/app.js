@@ -199,7 +199,7 @@ function getServices() {
             num: '05',
             title: gettext('24/7 Monitoring'),
             desc: gettext('Round-the-clock remote surveillance and rapid response coordination from our Baku operations centre. Every alert is triaged by trained analysts, not just automated rules.'),
-            image: '/static/img/webcloud.png',
+            image: '/static/img/monitoring.jpg',
             icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <path d="M24 8C15.2 8 8 15.2 8 24s7.2 16 16 16 16-7.2 16-16S32.8 8 24 8z" stroke="#00d4ff" stroke-width="1.5"/>
                  <path d="M24 18v8l5 3" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round"/>
