@@ -124,6 +124,7 @@ function getServices() {
         {
             num: '01',
             title: gettext('Perimeter Protection'),
+            slug: 'perimeter-protection',
             desc: gettext('Advanced sensor networks and smart barriers secure your perimeter against unauthorized access around the clock. Our layered approach combines radar, ground sensors, and AI-driven alerting.'),
             image: '/static/img/perimeter-protection.webp',
             icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,6 +147,7 @@ function getServices() {
         {
             num: '02',
             title: gettext('Access Control'),
+            slug: 'access-control',
             desc: gettext('Biometric and credential-based access management for restricted facilities, vessels, and critical zones. Full audit trails and remote revocation keep your access layer airtight.'),
             image: '/static/img/access-control.webp',
             icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,6 +166,7 @@ function getServices() {
         {
             num: '03',
             title: gettext('Fire & Hazard Detection'),
+            slug: 'fire-hazard-detection',
             desc: gettext('Multi-sensor early warning systems for fire, gas leaks, and environmental hazards on oil and marine platforms. Integrated suppression triggers minimize response time.'),
             image: '/static/img/fire-detection.webp',
             icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -181,6 +184,7 @@ function getServices() {
         {
             num: '04',
             title: gettext('AI Video Analytics'),
+            slug: 'ai-video-analytics',
             desc: gettext('Machine learning-powered video analysis detects threats, tracks movement, and generates real-time alerts \u2014 before incidents escalate into emergencies.'),
             image: '/static/img/ai-video-analytics.webp',
             icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,6 +202,7 @@ function getServices() {
         {
             num: '05',
             title: gettext('24/7 Monitoring'),
+            slug: '24-7-monitoring',
             desc: gettext('Round-the-clock remote surveillance and rapid response coordination from our Baku operations centre. Every alert is triaged by trained analysts, not just automated rules.'),
             image: '/static/img/monitoring.jpg',
             icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,6 +220,7 @@ function getServices() {
         {
             num: '06',
             title: gettext('Warehouse Security'),
+            slug: 'warehouse-security',
             desc: gettext('Integrated physical and digital security solutions for oil storage, equipment depots, and marine logistics hubs. From CCTV to inventory tamper-detection.'),
             image: '/static/img/warehouse-security.webp',
             icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -233,6 +239,8 @@ function getServices() {
         },
     ];
 }
+
+
 
 
 /* ============================================================
@@ -282,8 +290,10 @@ function getServices() {
         modalTitle.textContent = service.title;
         modalDesc.textContent = service.desc;
         modalTag.textContent = service.tag;
-
         modalIcon.innerHTML = service.icon;
+
+        const learnMoreBtn = document.getElementById('modal-learn-more');
+        learnMoreBtn.href = `/services/${service.slug}/`;
 
         const imgWrap = document.getElementById('modal-image-wrap');
         const imgEl = document.getElementById('modal-image');
@@ -346,6 +356,7 @@ function getServices() {
             if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); trigger(); }
         });
     });
+
 })();
 
 

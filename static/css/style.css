@@ -185,12 +185,12 @@ nav ul a:hover {
 .map-svg {
     width: 600px;
     opacity: 0.35;
-    filter: drop-shadow(0 0 25px rgba(0,212,255,0.6));
+    filter: drop-shadow(0 0 25px rgba(0, 212, 255, 0.6));
 }
 
 
 .map-shape {
-    fill: rgba(0,212,255,0.05);
+    fill: rgba(0, 212, 255, 0.05);
     stroke: var(--cyan);
     stroke-width: 2;
     stroke-dasharray: 8;
@@ -199,15 +199,30 @@ nav ul a:hover {
 
 /* Glow effekti */
 @keyframes map-glow {
-    0%,100% { opacity: 0.5; }
-    50% { opacity: 1; }
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
 }
 
 /* Yüngül hərəkət */
 @keyframes map-float {
-    0%,100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
+
 /* ── Radar ── */
 .radar-container {
     position: absolute;
@@ -685,11 +700,9 @@ h2 {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        135deg,
-        rgba(5, 10, 20, 0.72) 0%,
-        rgba(5, 10, 20, 0.38) 100%
-    );
+    background: linear-gradient(135deg,
+            rgba(5, 10, 20, 0.72) 0%,
+            rgba(5, 10, 20, 0.38) 100%);
 }
 
 .service-card:hover .card-bg {
@@ -697,7 +710,7 @@ h2 {
 }
 
 /* Bütün məzmun şəklin üstündə */
-.service-card > *:not(.card-bg) {
+.service-card>*:not(.card-bg) {
     position: relative;
     z-index: 1;
 }
@@ -1013,6 +1026,162 @@ h2 {
     pointer-events: none;
 }
 
+.modal-footer-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.modal-learn-more {
+    background: none;
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    color: var(--cyan);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.modal-learn-more:hover {
+    background: rgba(0, 212, 255, 0.08);
+    border-color: var(--cyan);
+}
+
+.service-detail {
+    max-width: 860px;
+    margin: 80px auto;
+    padding: 0 40px;
+}
+
+.sd-hero {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    margin-bottom: 60px;
+}
+
+.sd-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.6) brightness(0.6);
+}
+
+.sd-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(5, 13, 26, 0.95) 0%, rgba(5, 13, 26, 0.2) 100%);
+}
+
+.sd-hero-content {
+    position: absolute;
+    bottom: 36px;
+    left: 40px;
+    z-index: 2;
+}
+
+.sd-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--cyan);
+    letter-spacing: 0.2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sd-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: 0.05em;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 14px;
+}
+
+.sd-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: rgba(0, 212, 255, 0.5);
+}
+
+.sd-corner {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-color: var(--cyan);
+    border-style: solid;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.sd-corner.tl {
+    top: 16px;
+    left: 16px;
+    border-width: 2px 0 0 2px;
+}
+
+.sd-corner.br {
+    bottom: 16px;
+    right: 16px;
+    border-width: 0 2px 2px 0;
+}
+
+.sd-desc {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(200, 220, 232, 0.65);
+    border-left: 2px solid rgba(0, 212, 255, 0.25);
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.sd-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 48px;
+}
+
+.sd-feature {
+    font-size: 13px;
+    color: rgba(200, 220, 232, 0.6);
+    padding-left: 18px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.sd-feature::before {
+    content: '▸';
+    color: var(--cyan);
+    font-size: 11px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.sd-back {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--cyan);
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    padding: 10px 24px;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.sd-back:hover {
+    background: rgba(0, 212, 255, 0.08);
+    border-color: var(--cyan);
+}
+
 /* ============================================================
    VIDEO SECTION
    ============================================================ */
@@ -1206,7 +1375,8 @@ h2 {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: 0.75; /* overlay-lərin görünməsi üçün */
+    opacity: 0.75;
+    /* overlay-lərin görünməsi üçün */
     filter: saturate(0.6) brightness(0.8);
     z-index: 0;
 }

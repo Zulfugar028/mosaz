@@ -1,0 +1,88 @@
+from django.utils.translation import gettext_lazy as _
+
+SERVICES = [
+    {
+        'slug': 'perimeter-protection',
+        'num': '01',
+        'title': _('Perimeter Protection'),
+        'desc': _('Advanced sensor networks and smart barriers secure your perimeter against unauthorized access around the clock. Our layered approach combines radar, ground sensors, and AI-driven alerting.'),
+        'image': '/static/img/perimeter-protection.webp',
+        'features': [
+            _('Ground vibration sensors'),
+            _('Radar & lidar perimeter scan'),
+            _('Smart barrier integration'),
+            _('Instant breach alerting'),
+        ],
+        'tag': _('PERIMETER · CASPIAN REGION'),
+    },
+    {
+        'slug': 'access-control',
+        'num': '02',
+        'title': _('Access Control'),
+        'desc': _('Biometric and credential-based access management for restricted facilities, vessels, and critical zones. Full audit trails and remote revocation keep your access layer airtight.'),
+        'image': '/static/img/access-control.webp',
+        'features': [
+            _('Fingerprint & iris readers'),
+            _('RFID / smart-card support'),
+            _('Remote access revocation'),
+            _('Full audit log & reporting'),
+        ],
+        'tag': _('ACCESS CONTROL · OFFSHORE'),
+    },
+    {
+        'slug': 'fire-hazard-detection',
+        'num': '03',
+        'title': _('Fire & Hazard Detection'),
+        'desc': _('Multi-sensor early warning systems for fire, gas leaks, and environmental hazards on oil and marine platforms. Integrated suppression triggers minimize response time.'),
+        'image': '/static/img/fire-detection.webp',
+        'features': [
+            _('Multi-gas leak detection'),
+            _('Thermal & flame sensors'),
+            _('Automated suppression trigger'),
+            _('Platform-wide PA integration'),
+        ],
+        'tag': _('HAZARD DETECTION · OFFSHORE'),
+    },
+    {
+        'slug': 'ai-video-analytics',
+        'num': '04',
+        'title': _('AI Video Analytics'),
+        'desc': _('Machine learning-powered video analysis detects threats, tracks movement, and generates real-time alerts — before incidents escalate into emergencies.'),
+        'image': '/static/img/ai-video-analytics.webp',
+        'features': [
+            _('Real-time object detection'),
+            _('Behavioural anomaly alerts'),
+            _('License plate recognition'),
+            _('Edge & cloud deployment'),
+        ],
+        'tag': _('AI ANALYTICS · REAL-TIME'),
+    },
+    {
+        'slug': 'monitoring',
+        'num': '05',
+        'title': _('24/7 Monitoring'),
+        'desc': _('Round-the-clock remote surveillance and rapid response coordination from our Baku operations centre. Every alert is triaged by trained analysts, not just automated rules.'),
+        'image': '/static/img/monitoring.jpg',
+        'features': [
+            _('24/7 analyst coverage'),
+            _('Sub-60s alert response SLA'),
+            _('Baku operations centre'),
+            _('Escalation & reporting'),
+        ],
+        'tag': _('24/7 MONITORING · BAKU OPS'),
+    },
+    {
+        'slug': 'warehouse-security',
+        'num': '06',
+        'title': _('Warehouse Security'),
+        'desc': _('Integrated physical and digital security solutions for oil storage, equipment depots, and marine logistics hubs. From CCTV to inventory tamper-detection.'),
+        'image': '/static/img/warehouse-security.webp',
+        'features': [
+            _('CCTV & perimeter sensors'),
+            _('Inventory tamper detection'),
+            _('Visitor management'),
+            _('Fire & flood safeguards'),
+        ],
+        'tag': _('WAREHOUSE · LOGISTICS'),
+    },
+]

@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.core.cache import cache
 from django.http import HttpResponse
 from .forms import ContactRequestForm
+from .services_data import SERVICES
 
 def members(request):
     success = False
@@ -25,3 +26,10 @@ def members(request):
         form = ContactRequestForm()
 
     return render(request, 'mos-az-design.html', {'form': form, 'success': success})
+
+
+def service_detail(request, slug):
+    service = next((s for s in SERVICES if s['slug'] == slug), None)
+    if not service:
+        raise Http404
+    return render(request, 'service_detail.html', {'service': service})

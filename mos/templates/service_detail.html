@@ -1,0 +1,619 @@
+{% load i18n static %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ service.title }} — MOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        /* ── CSS Variables (saytın mövcud dəyişənləri) ── */
+        :root {
+            --cyan: #00d4ff;
+            --deep: #050a14;
+            --surface: #0a1220;
+            --steel: #0d1928;
+            --border: rgba(0, 212, 255, 0.12);
+            --white: #e8f4f8;
+            --muted: rgba(200, 220, 232, 0.55);
+        }
+
+        /* ── HERO ── */
+        .sd-hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            overflow: hidden;
+        }
+
+        .sd-hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: saturate(0.5) brightness(0.45);
+            transform: scale(1.05);
+            transition: transform 8s ease;
+        }
+
+        .sd-hero-img.loaded {
+            transform: scale(1);
+        }
+
+        .sd-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(to right, rgba(5,10,20,0.92) 40%, rgba(5,10,20,0.2) 100%),
+                linear-gradient(to top, rgba(5,10,20,0.98) 0%, transparent 50%);
+        }
+
+        /* Scan lines efekti */
+        .sd-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 3px,
+                rgba(0,0,0,0.06) 3px,
+                rgba(0,0,0,0.06) 4px
+            );
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .sd-hero-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            padding: 80px 80px 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .sd-breadcrumb {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.62rem;
+            letter-spacing: 0.2em;
+            color: var(--cyan);
+            text-transform: uppercase;
+            margin-bottom: 28px;
+            opacity: 0;
+            animation: fadeUp 0.6s 0.1s ease forwards;
+        }
+
+        .sd-breadcrumb a {
+            color: rgba(0,212,255,0.5);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .sd-breadcrumb a:hover { color: var(--cyan); }
+        .sd-breadcrumb span { margin: 0 10px; opacity: 0.4; }
+
+        .sd-num {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.65rem;
+            color: rgba(0,212,255,0.5);
+            letter-spacing: 0.25em;
+            margin-bottom: 16px;
+            display: block;
+            opacity: 0;
+            animation: fadeUp 0.6s 0.2s ease forwards;
+        }
+
+        .sd-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(3rem, 7vw, 6rem);
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            color: var(--white);
+            line-height: 0.95;
+            margin-bottom: 32px;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: fadeUp 0.7s 0.3s ease forwards;
+        }
+
+        .sd-tag {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.62rem;
+            letter-spacing: 0.2em;
+            color: rgba(0,212,255,0.45);
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            opacity: 0;
+            animation: fadeUp 0.6s 0.4s ease forwards;
+        }
+
+        .sd-tag::before {
+            content: '';
+            width: 32px;
+            height: 1px;
+            background: var(--cyan);
+            opacity: 0.4;
+        }
+
+        /* Künc dekorları */
+        .sd-corner {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            border-color: var(--cyan);
+            border-style: solid;
+            opacity: 0.5;
+            z-index: 3;
+        }
+
+        .sd-corner.tl { top: 40px; left: 40px; border-width: 2px 0 0 2px; }
+        .sd-corner.tr { top: 40px; right: 40px; border-width: 2px 2px 0 0; }
+        .sd-corner.br { bottom: 40px; right: 40px; border-width: 0 2px 2px 0; }
+
+        /* Status badge */
+        .sd-status {
+            position: absolute;
+            top: 40px;
+            right: 72px;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.55rem;
+            color: var(--cyan);
+            letter-spacing: 0.18em;
+        }
+
+        .sd-status-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--cyan);
+            box-shadow: 0 0 8px var(--cyan);
+            animation: pulse 1.2s ease-in-out infinite;
+        }
+
+        /* ── MAIN BODY ── */
+        .sd-body {
+            background: var(--deep);
+            position: relative;
+        }
+
+        /* ── INTRO STRIP ── */
+        .sd-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sd-intro-desc {
+            padding: 80px;
+            border-right: 1px solid var(--border);
+        }
+
+        .sd-intro-desc p {
+            font-size: 1.1rem;
+            line-height: 1.85;
+            color: rgba(200,220,232,0.7);
+            border-left: 2px solid rgba(0,212,255,0.3);
+            padding-left: 24px;
+        }
+
+        .sd-intro-meta {
+            padding: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        .sd-meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .sd-meta-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.58rem;
+            letter-spacing: 0.2em;
+            color: rgba(0,212,255,0.4);
+            text-transform: uppercase;
+        }
+
+        .sd-meta-value {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            color: var(--white);
+        }
+
+        /* ── FEATURES SECTION ── */
+        .sd-features-section {
+            padding: 100px 80px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sd-section-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.6rem;
+            letter-spacing: 0.25em;
+            color: var(--cyan);
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .sd-section-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .sd-features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+        }
+
+        .sd-feature-card {
+            background: var(--surface);
+            padding: 40px 44px;
+            position: relative;
+            overflow: hidden;
+            transition: background 0.3s ease;
+        }
+
+        .sd-feature-card:hover {
+            background: var(--steel);
+        }
+
+        .sd-feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 2px;
+            background: var(--cyan);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .sd-feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .sd-feature-idx {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.58rem;
+            color: rgba(0,212,255,0.35);
+            letter-spacing: 0.15em;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .sd-feature-icon {
+            width: 32px;
+            height: 2px;
+            background: var(--cyan);
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+        .sd-feature-text {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 0.06em;
+            color: var(--white);
+            font-weight: 400;
+        }
+
+        /* ── DEPLOYMENT INFO ── */
+        .sd-deployment {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sd-deploy-item {
+            padding: 60px 48px;
+            border-right: 1px solid var(--border);
+            position: relative;
+        }
+
+        .sd-deploy-item:last-child { border-right: none; }
+
+        .sd-deploy-num {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(2.5rem, 4vw, 4rem);
+            color: var(--cyan);
+            line-height: 1;
+            margin-bottom: 12px;
+            opacity: 0.15;
+        }
+
+        .sd-deploy-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.6rem;
+            letter-spacing: 0.2em;
+            color: var(--muted);
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .sd-deploy-value {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.4rem;
+            color: var(--white);
+            letter-spacing: 0.04em;
+        }
+
+        /* ── CTA / FOOTER ── */
+        .sd-cta {
+            padding: 100px 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .sd-cta-text h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--white);
+            letter-spacing: 0.04em;
+            margin-bottom: 12px;
+        }
+
+        .sd-cta-text p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            max-width: 420px;
+            line-height: 1.7;
+        }
+
+        .sd-cta-actions {
+            display: flex;
+            gap: 16px;
+            flex-shrink: 0;
+        }
+
+        .sd-btn-primary {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            color: var(--deep);
+            background: var(--cyan);
+            border: none;
+            padding: 14px 32px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: opacity 0.2s ease;
+            display: inline-block;
+        }
+
+        .sd-btn-primary:hover { opacity: 0.85; }
+
+        .sd-btn-secondary {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            color: var(--cyan);
+            background: none;
+            border: 1px solid rgba(0,212,255,0.3);
+            padding: 14px 32px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background 0.2s ease, border-color 0.2s ease;
+            display: inline-block;
+        }
+
+        .sd-btn-secondary:hover {
+            background: rgba(0,212,255,0.06);
+            border-color: var(--cyan);
+        }
+
+        /* ── SCROLL REVEAL ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ── ANIMATIONS ── */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; box-shadow: 0 0 8px var(--cyan); }
+            50%       { opacity: 0.5; box-shadow: 0 0 4px var(--cyan); }
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 900px) {
+            .sd-hero-content { padding: 48px 32px 72px; }
+            .sd-intro { grid-template-columns: 1fr; }
+            .sd-intro-desc { padding: 60px 32px; border-right: none; border-bottom: 1px solid var(--border); }
+            .sd-intro-meta { padding: 48px 32px; }
+            .sd-features-section { padding: 60px 32px; }
+            .sd-features-grid { grid-template-columns: 1fr; }
+            .sd-deployment { grid-template-columns: 1fr; }
+            .sd-deploy-item { border-right: none; border-bottom: 1px solid var(--border); padding: 40px 32px; }
+            .sd-cta { flex-direction: column; align-items: flex-start; padding: 60px 32px; }
+            .sd-corner.tr { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <nav>
+    <a href="/" class="logo">
+      <img src="{% static 'img/mos_logo_white.png' %}" alt="MOS Logo" loading="lazy">
+    </a>
+    <ul>
+      <li><a href="/#modules">{% trans "Modules" %}</a></li>
+      <li><a href="/#analytics">{% trans "Analytics" %}</a></li>
+      <li><a href="/#about">{% trans "About" %}</a></li>
+      <li><a href="/#contact">{% trans "Contact" %}</a></li>
+    </ul>
+    <form action="{% url 'set_language' %}" method="post" class="language-form">
+      {% csrf_token %}
+      <input name="next" type="hidden" value="{{ request.path }}" />
+      <select class="language-wrapper" name="language" onchange="this.form.submit()">
+        {% get_available_languages as LANGUAGES %}
+        {% for lang in LANGUAGES %}
+        <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+          {{ lang.1 }}
+        </option>
+        {% endfor %}
+      </select>
+    </form>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <div class="sd-hero">
+    <img src="{{ service.image }}" alt="{{ service.title }}" class="sd-hero-img" id="sd-hero-img">
+    <div class="sd-hero-overlay"></div>
+
+    <div class="sd-status">
+      <span class="sd-status-dot"></span>{% trans "ACTIVE DEPLOYMENT" %}
+    </div>
+
+    <div class="sd-corner tl"></div>
+    <div class="sd-corner tr"></div>
+    <div class="sd-corner br"></div>
+
+    <div class="sd-hero-content">
+      <div class="sd-breadcrumb">
+        <a href="/">MOS</a><span>/</span><a href="/#modules">{% trans "Modules" %}</a><span>/</span>{{ service.title }}
+      </div>
+      <span class="sd-num">{{ service.num }} — {% trans "CORE MODULE" %}</span>
+      <h1 class="sd-title">{{ service.title }}</h1>
+      <span class="sd-tag">{{ service.tag }}</span>
+    </div>
+  </div>
+
+  <!-- ── BODY ── -->
+  <div class="sd-body">
+
+    <!-- Intro: desc + meta -->
+    <div class="sd-intro reveal">
+      <div class="sd-intro-desc">
+        <p>{{ service.desc }}</p>
+      </div>
+      <div class="sd-intro-meta">
+        <div class="sd-meta-item">
+          <span class="sd-meta-label">{% trans "Region" %}</span>
+          <span class="sd-meta-value">{% trans "Caspian Sea · Azerbaijan" %}</span>
+        </div>
+        <div class="sd-meta-item">
+          <span class="sd-meta-label">{% trans "Deployment" %}</span>
+          <span class="sd-meta-value">{% trans "Offshore · Onshore" %}</span>
+        </div>
+        <div class="sd-meta-item">
+          <span class="sd-meta-label">{% trans "Monitoring" %}</span>
+          <span class="sd-meta-value">24 / 7 · 365</span>
+        </div>
+        <div class="sd-meta-item">
+          <span class="sd-meta-label">{% trans "Response SLA" %}</span>
+          <span class="sd-meta-value">&lt; 60 {% trans "seconds" %}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features grid -->
+    <div class="sd-features-section reveal">
+      <div class="sd-section-label">{% trans "SYSTEM CAPABILITIES" %}</div>
+      <div class="sd-features-grid">
+        {% for feature in service.features %}
+        <div class="sd-feature-card">
+          <span class="sd-feature-idx">0{{ forloop.counter }}</span>
+          <div class="sd-feature-icon"></div>
+          <div class="sd-feature-text">{{ feature }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Deployment stats -->
+    <div class="sd-deployment reveal">
+      <div class="sd-deploy-item">
+        <div class="sd-deploy-num">15+</div>
+        <div class="sd-deploy-label">{% trans "Years Active" %}</div>
+        <div class="sd-deploy-value">{% trans "Since 2010" %}</div>
+      </div>
+      <div class="sd-deploy-item">
+        <div class="sd-deploy-num">99.8</div>
+        <div class="sd-deploy-label">{% trans "System Uptime" %}</div>
+        <div class="sd-deploy-value">99.8% SLA</div>
+      </div>
+      <div class="sd-deploy-item">
+        <div class="sd-deploy-num">40+</div>
+        <div class="sd-deploy-label">{% trans "Global Partners" %}</div>
+        <div class="sd-deploy-value">{% trans "Certified Integrators" %}</div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="sd-cta reveal">
+      <div class="sd-cta-text">
+        <h2>{% trans "READY TO DEPLOY?" %}</h2>
+        <p>{% trans "Our engineers will assess your facility and recommend the optimal configuration for your infrastructure." %}</p>
+      </div>
+      <div class="sd-cta-actions">
+        <a href="/#contact" class="sd-btn-primary">{% trans "Get a Quote →" %}</a>
+        <a href="/#modules" class="sd-btn-secondary">← {% trans "All Modules" %}</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="{% static 'js/app.js' %}"></script>
+  <script>
+    // Hero image pan
+    const heroImg = document.getElementById('sd-hero-img');
+    if (heroImg) {
+      heroImg.addEventListener('load', () => heroImg.classList.add('loaded'));
+      if (heroImg.complete) heroImg.classList.add('loaded');
+    }
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => revealObs.observe(el));
+  </script>
+
+</body>
+</html>
